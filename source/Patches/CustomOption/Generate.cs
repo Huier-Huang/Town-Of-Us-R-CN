@@ -500,238 +500,238 @@ namespace TownOfUs.CustomOption
             Patches.ExportButton = new Export(num++);
             Patches.ImportButton = new Import(num++);
 
-            CrewInvestigativeRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "Crewmate Investigative Roles");
-            AurialOn = new CustomNumberOption(num++, MultiMenu.crewmate, $"<color=#B34D99FF>Aurial</color>", 0f, 0f, 100f, 10f,
+            CrewInvestigativeRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "侦察型船员");
+            AurialOn = new CustomNumberOption(num++, MultiMenu.crewmate, $"<color=#B34D99FF>修仙者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            DetectiveOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D4DFFFF>Detective</color>", 0f, 0f, 100f, 10f,
+            DetectiveOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D4DFFFF>侧写师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            HaunterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D3D3D3FF>Haunter</color>", 0f, 0f, 100f, 10f,
+            HaunterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D3D3D3FF>冤魂</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            InvestigatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>Investigator</color>", 0f, 0f, 100f, 10f,
+            InvestigatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>调查员</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MysticOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>Mystic</color>", 0f, 0f, 100f, 10f,
+            MysticOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>招魂师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            OracleOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#BF00BFFF>Oracle</color>", 0f, 0f, 100f, 10f,
+            OracleOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#BF00BFFF>神之使徒</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            SeerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFCC80FF>Seer</color>", 0f, 0f, 100f, 10f,
+            SeerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFCC80FF>预言家</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            SnitchOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D4AF37FF>Snitch</color>", 0f, 0f, 100f, 10f,
+            SnitchOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D4AF37FF>告密者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            SpyOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>Spy</color>", 0f, 0f, 100f, 10f,
+            SpyOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>间谍</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            TrackerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#009900FF>Tracker</color>", 0f, 0f, 100f, 10f,
+            TrackerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#009900FF>追踪者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            TrapperOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A7D1B3FF>Trapper</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-
-            CrewKillingRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "Crewmate Killing Roles");
-            SheriffOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFFF00FF>Sheriff</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            VampireHunterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B3B3E6FF>Vampire Hunter</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            VeteranOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#998040FF>Veteran</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            VigilanteOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFFF99FF>Vigilante</color>", 0f, 0f, 100f, 10f,
+            TrapperOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A7D1B3FF>陷阱师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            CrewProtectiveRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "Crewmate Protective Roles");
-            AltruistOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#660000FF>Altruist</color>", 0f, 0f, 100f, 10f,
+            CrewKillingRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "击杀型船员");
+            SheriffOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFFF00FF>警长</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MedicOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#006600FF>Medic</color>", 0f, 0f, 100f, 10f,
+            VampireHunterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B3B3E6FF>吸血鬼杀手</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-
-            CrewSupportRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "Crewmate Support Roles");
-            EngineerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFA60AFF>Engineer</color>", 0f, 0f, 100f, 10f,
+            VeteranOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#998040FF>老兵</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            ImitatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B3D94DFF>Imitator</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            MayorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#704FA8FF>Mayor</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            MediumOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>Medium</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            ProsecutorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B38000FF>Prosecutor</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            SwapperOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#66E666FF>Swapper</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            TransporterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#00EEFFFF>Transporter</color>", 0f, 0f, 100f, 10f,
+            VigilanteOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFFF99FF>侠客</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-
-            NeutralBenignRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "Neutral Benign Roles");
-            AmnesiacOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#80B2FFFF>Amnesiac</color>", 0f, 0f, 100f, 10f,
+            CrewProtectiveRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "保护型船员");
+            AltruistOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#660000FF>殉道者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            GuardianAngelOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#B3FFFFFF>Guardian Angel</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            SurvivorOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>Survivor</color>", 0f, 0f, 100f, 10f,
+            MedicOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#006600FF>医生</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            NeutralEvilRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "Neutral Evil Roles");
-            DoomsayerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF80FF>Doomsayer</color>", 0f, 0f, 100f, 10f,
+            CrewSupportRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "支援型船员");
+            EngineerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFA60AFF>工程师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            ExecutionerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Executioner</color>", 0f, 0f, 100f, 10f,
+            ImitatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B3D94DFF>调查员</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            JesterOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FFBFCCFF>Jester</color>", 0f, 0f, 100f, 10f,
+            MayorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#704FA8FF>市长</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            PhantomOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#662962FF>Phantom</color>", 0f, 0f, 100f, 10f,
+            MediumOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>灵媒</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-
-            NeutralKillingRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "Neutral Killing Roles");
-            ArsonistOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FF4D00FF>Arsonist</color>", 0f, 0f, 100f, 10f,
+            ProsecutorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B38000FF>检察官</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            PlaguebearerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#E6FFB3FF>Plaguebearer</color>", 0f, 0f, 100f, 10f,
+            SwapperOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#66E666FF>换票师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            GlitchOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF00FF>The Glitch</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            VampireOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#262626FF>Vampire</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            WerewolfOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#A86629FF>Werewolf</color>", 0f, 0f, 100f, 10f,
+            TransporterOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#00EEFFFF>传送师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            ImpostorConcealingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "Impostor Concealing Roles");
-            EscapistOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Escapist</color>", 0f, 0f, 100f, 10f,
+
+            NeutralBenignRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "善良型中立");
+            AmnesiacOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#80B2FFFF>失忆者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            GrenadierOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Grenadier</color>", 0f, 0f, 100f, 10f,
+            GuardianAngelOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#B3FFFFFF>守护天使</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MorphlingOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Morphling</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            SwooperOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Swooper</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            VenererOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Venerer</color>", 0f, 0f, 100f, 10f,
+            SurvivorOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>幸存者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            ImpostorKillingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "Impostor Killing Roles");
-            BomberOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Bomber</color>", 0f, 0f, 100f, 10f,
+            NeutralEvilRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "邪恶型中立");
+            DoomsayerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF80FF>末日预示者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            TraitorOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Traitor</color>", 0f, 0f, 100f, 10f,
+            ExecutionerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#8C4005FF>处刑人</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            WarlockOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Warlock</color>", 0f, 0f, 100f, 10f,
+            JesterOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FFBFCCFF>小丑</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-
-            ImpostorSupportRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "Impostor Support Roles");
-            BlackmailerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Blackmailer</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            JanitorOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Janitor</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            MinerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Miner</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            UndertakerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Undertaker</color>", 0f, 0f, 100f, 10f,
+            PhantomOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#662962FF>幻影</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            CrewmateModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "Crewmate Modifiers");
-            AftermathOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#A6FFA6FF>Aftermath</color>", 0f, 0f, 100f, 10f,
+            NeutralKillingRoles = new CustomHeaderOption(num++, MultiMenu.neutral, "击杀型中立");
+            ArsonistOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#FF4D00FF>纵火犯</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            BaitOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#00B3B3FF>Bait</color>", 0f, 0f, 100f, 10f,
+            PlaguebearerOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#E6FFB3FF>瘟疫之源</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            DiseasedOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#808080FF>Diseased</color>", 0f, 0f, 100f, 10f,
+            GlitchOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#00FF00FF>混沌</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            FrostyOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#99FFFFFF>Frosty</color>", 0f, 0f, 100f, 10f,
+            VampireOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#262626FF>吸血鬼</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MultitaskerOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF804DFF>Multitasker</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            TorchOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FFFF99FF>Torch</color>", 0f, 0f, 100f, 10f,
+            WerewolfOn = new CustomNumberOption(num++, MultiMenu.neutral, "<color=#A86629FF>月下狼人</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            GlobalModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "Global Modifiers");
-            ButtonBarryOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#E600FFFF>Button Barry</color>", 0f, 0f, 100f, 10f,
+            ImpostorConcealingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "隐藏型内鬼");
+            EscapistOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>逃逸者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            FlashOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF8080FF>Flash</color>", 0f, 0f, 100f, 10f,
+            GrenadierOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>掷弹兵</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            GiantOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FFB34DFF>Giant</color>", 0f, 0f, 100f, 10f,
+            MorphlingOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>化形者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            LoversOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF66CCFF>Lovers</color>", 0f, 0f, 100f, 10f,
+            SwooperOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>隐形人</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            RadarOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0080FF>Radar</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            SleuthOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#803333FF>Sleuth</color>", 0f, 0f, 100f, 10f,
-                PercentFormat);
-            TiebreakerOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#99E699FF>Tiebreaker</color>", 0f, 0f, 100f, 10f,
+            VenererOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>猎人</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
-            ImpostorModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "Impostor Modifiers");
-            DisperserOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Disperser</color>", 0f, 0f, 100f, 10f,
+            ImpostorKillingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "击杀型内鬼");
+            BomberOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>爆破手</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            DoubleShotOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Double Shot</color>", 0f, 0f, 100f, 10f,
+            TraitorOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>叛徒</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            UnderdogOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Underdog</color>", 0f, 0f, 100f, 10f,
+            WarlockOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>术士</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+
+            ImpostorSupportRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "支援型内鬼");
+            BlackmailerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>勒索者</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            JanitorOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>清洁工</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            MinerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>矿工</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            UndertakerOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>送葬者</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+
+            CrewmateModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "船员附加职业");
+            AftermathOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#A6FFA6FF>惹不起的人</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            BaitOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#00B3B3FF>诱饵</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            DiseasedOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#808080FF>病人</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            FrostyOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#99FFFFFF>圣诞老人</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            MultitaskerOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF804DFF>多线程</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            TorchOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FFFF99FF>火炬手</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+
+            GlobalModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "通用附加职业");
+            ButtonBarryOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#E600FFFF>执钮人</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            FlashOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF8080FF>闪电侠</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            GiantOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FFB34DFF>巨人</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            LoversOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF66CCFF>恋人</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            RadarOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0080FF>雷达</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            SleuthOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#803333FF>掘暮者</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            TiebreakerOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#99E699FF>破局者</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+
+            ImpostorModifiers = new CustomHeaderOption(num++, MultiMenu.modifiers, "内鬼附加职业");
+            DisperserOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>散布者</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            DoubleShotOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>专业刺客</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            UnderdogOn = new CustomNumberOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>失败者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             GameModeSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Game Mode Settings");
-            GameMode = new CustomStringOption(num++, MultiMenu.main, "Game Mode", new[] {"Classic", "All Any", "Killing Only", "Cultist" });
+                new CustomHeaderOption(num++, MultiMenu.main, "游戏模式设置");
+            GameMode = new CustomStringOption(num++, MultiMenu.main, "Game Mode", new[] {"经典", "所有", "仅击杀", "合纵" });
 
             ClassicSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Classic Game Mode Settings");
+                new CustomHeaderOption(num++, MultiMenu.main, "经典模式设置");
             MinNeutralBenignRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Min Neutral Benign Roles", 1, 0, 3, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最小善良型中立职业数", 1, 0, 3, 1);
             MaxNeutralBenignRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Neutral Benign Roles", 1, 0, 3, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大善良型中立职业数", 1, 0, 3, 1);
             MinNeutralEvilRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Min Neutral Evil Roles", 1, 0, 3, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最小邪恶型中立职业数", 1, 0, 3, 1);
             MaxNeutralEvilRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Neutral Evil Roles", 1, 0, 3, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大邪恶型中立职业数", 1, 0, 3, 1);
             MinNeutralKillingRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Min Neutral Killing Roles", 1, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最小击杀型中立职业数", 1, 0, 5, 1);
             MaxNeutralKillingRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Neutral Killing Roles", 1, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大击杀型中立职业数", 1, 0, 5, 1);
 
             AllAnySettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "All Any Settings");
-            RandomNumberImps = new CustomToggleOption(num++, MultiMenu.main, "Random Number Of Impostors", true);
+                new CustomHeaderOption(num++, MultiMenu.main, "所有设置");
+            RandomNumberImps = new CustomToggleOption(num++, MultiMenu.main, "随机内鬼数", true);
 
             KillingOnlySettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Killing Only Settings");
+                new CustomHeaderOption(num++, MultiMenu.main, "仅击杀设置");
             NeutralRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Neutral Roles", 1, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "中立职业数", 1, 0, 5, 1);
             VeteranCount =
-                new CustomNumberOption(num++, MultiMenu.main, "Veteran Count", 1, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "老兵职业数", 1, 0, 5, 1);
             VigilanteCount =
-                new CustomNumberOption(num++, MultiMenu.main, "Vigilante Count", 1, 0, 5, 1);
-            AddArsonist = new CustomToggleOption(num++, MultiMenu.main, "Add Arsonist", true);
-            AddPlaguebearer = new CustomToggleOption(num++, MultiMenu.main, "Add Plaguebearer", true);
+                new CustomNumberOption(num++, MultiMenu.main, "侠客职业数", 1, 0, 5, 1);
+            AddArsonist = new CustomToggleOption(num++, MultiMenu.main, "启用纵火犯", true);
+            AddPlaguebearer = new CustomToggleOption(num++, MultiMenu.main, "启用瘟疫之源", true);
 
             CultistSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Cultist Settings");
-            MayorCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#704FA8FF>Mayor</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
+                new CustomHeaderOption(num++, MultiMenu.main, "合纵设置");
+            MayorCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#704FA8FF>市长</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
                 PercentFormat);
-            SeerCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#FFCC80FF>Seer</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
+            SeerCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#FFCC80FF>预言家</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
                 PercentFormat);
-            SheriffCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#FFFF00FF>Sheriff</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
+            SheriffCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#FFFF00FF>警长</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
                 PercentFormat);
-            SurvivorCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#FFE64DFF>Survivor</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
+            SurvivorCultistOn = new CustomNumberOption(num++, MultiMenu.main, "<color=#FFE64DFF>幸存者</color> (Cultist Mode)", 100f, 0f, 100f, 10f,
                 PercentFormat);
             NumberOfSpecialRoles =
-                new CustomNumberOption(num++, MultiMenu.main, "Number Of Special Roles", 4, 0, 4, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "内鬼数", 4, 0, 4, 1);
             MaxChameleons =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Chameleons", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大变色龙职业数", 3, 0, 5, 1);
             MaxEngineers =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Engineers", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大工程师职业数", 3, 0, 5, 1);
             MaxInvestigators =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Investigators", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大调查员职业数", 3, 0, 5, 1);
             MaxMystics =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Mystics", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大招魂师职业数", 3, 0, 5, 1);
             MaxSnitches =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Snitches", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大告密者职业数", 3, 0, 5, 1);
             MaxSpies =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Spies", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大间谍职业数", 3, 0, 5, 1);
             MaxTransporters =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Transporters", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大传送师职业数", 3, 0, 5, 1);
             MaxVigilantes =
-                new CustomNumberOption(num++, MultiMenu.main, "Max Vigilantes", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大侠客职业数", 3, 0, 5, 1);
             WhisperCooldown =
-                new CustomNumberOption(num++, MultiMenu.main, "Initial Whisper Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.main, "初始耳语冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             IncreasedCooldownPerWhisper =
-                new CustomNumberOption(num++, MultiMenu.main, "Increased Cooldown Per Whisper", 5f, 0f, 15f, 0.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.main, "每次增加耳语冷却时间", 5f, 0f, 15f, 0.5f, CooldownFormat);
             WhisperRadius =
-                new CustomNumberOption(num++, MultiMenu.main, "Whisper Radius", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
-            ConversionPercentage = new CustomNumberOption(num++, MultiMenu.main, "Conversion Percentage", 25f, 0f, 100f, 5f,
+                new CustomNumberOption(num++, MultiMenu.main, "耳语半径", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
+            ConversionPercentage = new CustomNumberOption(num++, MultiMenu.main, "转换成功率", 25f, 0f, 100f, 5f,
                 PercentFormat);
-            DecreasedPercentagePerConversion = new CustomNumberOption(num++, MultiMenu.main, "Decreased Conversion Percentage Per Conversion", 5f, 0f, 15f, 1f,
+            DecreasedPercentagePerConversion = new CustomNumberOption(num++, MultiMenu.main, "降低了每次转换的转换概率", 5f, 0f, 15f, 1f,
                 PercentFormat);
             ReviveCooldown =
-                new CustomNumberOption(num++, MultiMenu.main, "Initial Revive Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.main, "初始复活冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             IncreasedCooldownPerRevive =
-                new CustomNumberOption(num++, MultiMenu.main, "Increased Cooldown Per Revive", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            MaxReveals = new CustomNumberOption(num++, MultiMenu.main, "Maximum Number Of Reveals", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "增加了每次复活的冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            MaxReveals = new CustomNumberOption(num++, MultiMenu.main, "最大复活次数", 5, 1, 15, 1);
 
             MapSettings = new CustomHeaderOption(num++, MultiMenu.main, "Map Settings");
             RandomMapEnabled = new CustomToggleOption(num++, MultiMenu.main, "Choose Random Map", false);
@@ -800,106 +800,106 @@ namespace TownOfUs.CustomOption
             AssassinateAfterVoting = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess After Voting", false);
 
             Aurial =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B34D99FF>Aurial</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B34D99FF>修仙者</color>");
             RadiateRange =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Radiate Range", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "放射范围", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
             RadiateCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Radiate Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "放射冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             RadiateInvis =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Radiate See Delay", 10f, 0f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "放射延迟", 10f, 0f, 15f, 1f, CooldownFormat);
             RadiateCount =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Radiate Uses To See", 3, 1, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "放射的用途", 3, 1, 5, 1);
             RadiateSucceedChance =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Radiate Succeed Chance", 100f, 0f, 100f, 10f, PercentFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "放射成功概率", 100f, 0f, 100f, 10f, PercentFormat);
 
             Detective =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D4DFFFF>Detective</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D4DFFFF>侧写师</color>");
             ExamineCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Examine Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            DetectiveReportOn = new CustomToggleOption(num++, MultiMenu.crewmate, "Show Detective Reports", true);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "侧写冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            DetectiveReportOn = new CustomToggleOption(num++, MultiMenu.crewmate, "显示侧写报告", true);
             DetectiveRoleDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Time Where Detective Will Have Role", 15f, 0f, 60f, 2.5f,
+                new CustomNumberOption(num++, MultiMenu.crewmate, "多少时间内显示职业", 15f, 0f, 60f, 2.5f,
                     CooldownFormat);
             DetectiveFactionDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Time Where Detective Will Have Faction", 30f, 0f, 60f, 2.5f,
+                new CustomNumberOption(num++, MultiMenu.crewmate, "多少时间内显示阵营", 30f, 0f, 60f, 2.5f,
                     CooldownFormat);
 
             Haunter =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#d3d3d3FF>Haunter</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#d3d3d3FF>冤魂</color>");
             HaunterTasksRemainingClicked =
-                 new CustomNumberOption(num++, MultiMenu.crewmate, "Tasks Remaining When Haunter Can Be Clicked", 5, 1, 15, 1);
+                 new CustomNumberOption(num++, MultiMenu.crewmate, "可以点击时的剩余任务", 5, 1, 15, 1);
             HaunterTasksRemainingAlert =
-                 new CustomNumberOption(num++, MultiMenu.crewmate, "Tasks Remaining When Alert Is Sent", 1, 1, 5, 1);
-            HaunterRevealsNeutrals = new CustomToggleOption(num++, MultiMenu.crewmate, "Haunter Reveals Neutral Roles", false);
-            HaunterCanBeClickedBy = new CustomStringOption(num++, MultiMenu.crewmate, "Who Can Click Haunter", new[] { "All", "Non-Crew", "Imps Only" });
+                 new CustomNumberOption(num++, MultiMenu.crewmate, "发送警报时的剩余任务", 1, 1, 5, 1);
+            HaunterRevealsNeutrals = new CustomToggleOption(num++, MultiMenu.crewmate, "冤魂可显示中立职业", false);
+            HaunterCanBeClickedBy = new CustomStringOption(num++, MultiMenu.crewmate, "谁可以点击", new[] { "所有人", "船员以外", "仅内鬼" });
 
             Investigator =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>Investigator</color>");
-            FootprintSize = new CustomNumberOption(num++, MultiMenu.crewmate, "Footprint Size", 4f, 1f, 10f, 1f);
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>调查员</color>");
+            FootprintSize = new CustomNumberOption(num++, MultiMenu.crewmate, "脚印大小", 4f, 1f, 10f, 1f);
             FootprintInterval =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Footprint Interval", 0.1f, 0.05f, 1f, 0.05f, CooldownFormat);
-            FootprintDuration = new CustomNumberOption(num++, MultiMenu.crewmate, "Footprint Duration", 10f, 1f, 15f, 0.5f, CooldownFormat);
-            AnonymousFootPrint = new CustomToggleOption(num++, MultiMenu.crewmate, "Anonymous Footprint", false);
-            VentFootprintVisible = new CustomToggleOption(num++, MultiMenu.crewmate, "Footprint Vent Visible", false);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "脚印间隔", 0.1f, 0.05f, 1f, 0.05f, CooldownFormat);
+            FootprintDuration = new CustomNumberOption(num++, MultiMenu.crewmate, "脚印存在时间", 10f, 1f, 15f, 0.5f, CooldownFormat);
+            AnonymousFootPrint = new CustomToggleOption(num++, MultiMenu.crewmate, "匿名脚印", false);
+            VentFootprintVisible = new CustomToggleOption(num++, MultiMenu.crewmate, "通风口可见脚印", false);
 
             Mystic =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>Mystic</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>招魂师</color>");
             MysticArrowDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Dead Body Arrow Duration", 0.1f, 0f, 1f, 0.05f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "尸体箭头持续时间", 0.1f, 0f, 1f, 0.05f, CooldownFormat);
 
             Oracle =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#BF00BFFF>Oracle</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#BF00BFFF>神之使徒</color>");
             ConfessCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Confess Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            RevealAccuracy = new CustomNumberOption(num++, MultiMenu.crewmate, "Reveal Accuracy", 80f, 0f, 100f, 10f,
+                new CustomNumberOption(num++, MultiMenu.crewmate, "承认冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            RevealAccuracy = new CustomNumberOption(num++, MultiMenu.crewmate, "承认的准确性", 80f, 0f, 100f, 10f,
                 PercentFormat);
             NeutralBenignShowsEvil =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Neutral Benign Roles Show Evil", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "善良中立显示邪恶", false);
             NeutralEvilShowsEvil =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Neutral Evil Roles Show Evil", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "邪恶中立显示邪恶", false);
             NeutralKillingShowsEvil =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Neutral Killing Roles Show Evil", true);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "击杀型中立显示邪恶", true);
 
             Seer =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFCC80FF>Seer</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFCC80FF>预言家</color>");
             SeerCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Seer Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "预言冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             CrewKillingRed =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Crewmate Killing Roles Are Red", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "击杀型船员显示红色", false);
             NeutBenignRed =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Neutral Benign Roles Are Red", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "善良中立显示红色", false);
             NeutEvilRed =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Neutral Evil Roles Are Red", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "邪恶中立显示红色", false);
             NeutKillingRed =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Neutral Killing Roles Are Red", true);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "击杀型中立显示红色", true);
             TraitorColourSwap =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Traitor Does Not Swap Colours", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "叛变不会换颜色", false);
 
-            Snitch = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#D4AF37FF>Snitch</color>");
-            SnitchSeesNeutrals = new CustomToggleOption(num++, MultiMenu.crewmate, "Snitch Sees Neutral Roles", false);
+            Snitch = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#D4AF37FF>告密者</color>");
+            SnitchSeesNeutrals = new CustomToggleOption(num++, MultiMenu.crewmate, "告密可得知中立", false);
             SnitchTasksRemaining =
-                 new CustomNumberOption(num++, MultiMenu.crewmate, "Tasks Remaining When Revealed", 1, 1, 5, 1);
-            SnitchSeesImpInMeeting = new CustomToggleOption(num++, MultiMenu.crewmate, "Snitch Sees Impostors In Meetings", true);
-            SnitchSeesTraitor = new CustomToggleOption(num++, MultiMenu.crewmate, "Snitch Sees Traitor", true);
+                 new CustomNumberOption(num++, MultiMenu.crewmate, "提示时剩余任务", 1, 1, 5, 1);
+            SnitchSeesImpInMeeting = new CustomToggleOption(num++, MultiMenu.crewmate, "告密可在会议上得知", true);
+            SnitchSeesTraitor = new CustomToggleOption(num++, MultiMenu.crewmate, "告密可得知叛徒", true);
 
             Spy =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>Spy</color>");
-            WhoSeesDead = new CustomStringOption(num++, MultiMenu.crewmate, "Who Sees Dead Bodies On Admin",
-                new[] { "Nobody", "间谍", "Everyone But Spy", "Everyone" });
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>间谍</color>");
+            WhoSeesDead = new CustomStringOption(num++, MultiMenu.crewmate, "谁能在管理面板看见尸体",
+                new[] { "没有人", "间谍", "除了间谍", "所有人" });
 
             Tracker =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#009900FF>Tracker</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#009900FF>追踪者</color>");
             UpdateInterval =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Arrow Update Interval", 5f, 0.5f, 15f, 0.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "箭头更新间隔", 5f, 0.5f, 15f, 0.5f, CooldownFormat);
             TrackCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Track Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            ResetOnNewRound = new CustomToggleOption(num++, MultiMenu.crewmate, "Tracker Arrows Reset After Each Round", false);
-            MaxTracks = new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Number Of Tracks Per Round", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "追踪冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            ResetOnNewRound = new CustomToggleOption(num++, MultiMenu.crewmate, "会议结束重置箭头", false);
+            MaxTracks = new CustomNumberOption(num++, MultiMenu.crewmate, "每轮最大追踪数", 5, 1, 15, 1);
 
             Trapper =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#A7D1B3FF>Trapper</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#A7D1B3FF>陷阱师</color>");
             MinAmountOfTimeInTrap =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Min Amount Of Time In Trap To Register", 1f, 0f, 15f, 0.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "在陷阱中停留最小时间", 1f, 0f, 15f, 0.5f, CooldownFormat);
             TrapCooldown =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "Trap Cooldown", 25f, 10f, 40f, 2.5f, CooldownFormat);
             TrapsRemoveOnNewRound =
@@ -1260,15 +1260,15 @@ namespace TownOfUs.CustomOption
             GiantSlow = new CustomNumberOption(num++, MultiMenu.modifiers, "Giant Speed", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
 
             Lovers =
-                new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF66CCFF>Lovers</color>");
-            BothLoversDie = new CustomToggleOption(num++, MultiMenu.modifiers, "Both Lovers Die");
-            LovingImpPercent = new CustomNumberOption(num++, MultiMenu.modifiers, "Loving Impostor Probability", 20f, 0f, 100f, 10f,
+                new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF66CCFF>恋人</color>");
+            BothLoversDie = new CustomToggleOption(num++, MultiMenu.modifiers, "同生共死");
+            LovingImpPercent = new CustomNumberOption(num++, MultiMenu.modifiers, "恋爱内鬼概率", 20f, 0f, 100f, 10f,
                 PercentFormat);
-            NeutralLovers = new CustomToggleOption(num++, MultiMenu.modifiers, "Neutral Roles Can Be Lovers");
+            NeutralLovers = new CustomToggleOption(num++, MultiMenu.modifiers, "中立可恋爱");
 
-            Underdog = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>Underdog</color>");
-            UnderdogKillBonus = new CustomNumberOption(num++, MultiMenu.modifiers, "Kill Cooldown Bonus", 5f, 2.5f, 10f, 2.5f, CooldownFormat);
-            UnderdogIncreasedKC = new CustomToggleOption(num++, MultiMenu.modifiers, "Increased Kill Cooldown When 2+ Imps", true);
+            Underdog = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>失败者</color>");
+            UnderdogKillBonus = new CustomNumberOption(num++, MultiMenu.modifiers, "奖励击杀冷却", 5f, 2.5f, 10f, 2.5f, CooldownFormat);
+            UnderdogIncreasedKC = new CustomToggleOption(num++, MultiMenu.modifiers, "剩余两个以上内鬼增加冷却", true);
         }
     }
 }

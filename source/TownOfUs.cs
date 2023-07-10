@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 using System.Linq;
 using System.Net;
@@ -213,6 +214,21 @@ namespace TownOfUs
                 try { ModManager.Instance.ShowModStamp(); }
                 catch { }
             }));
+
+            List<IRegionInfo> regionInfos = ServerManager._instance.AvailableRegions.ToList();
+            var server = regionInfos.FindAll(n => n.Name== "梦服上海(新)" || n.Name == "梦服上海（新）" || n.PingServer == "au-sh.pafyx.top" || n.PingServer == "http://au-sh-pafyx.top");
+            if(server == null)
+            {
+                ServerManager._instance.AddOrUpdateRegion(createHttp("au-sh.pafyx.top", "梦服上海(新)", 22000));
+            }
+
+            static IRegionInfo createHttp(string ip, string name, ushort port)
+            {
+                var serverIp = "http://" + ip;
+                var serverInfo = new ServerInfo(name, serverIp, port, false);
+                ServerInfo[] ServerInfo = { serverInfo };
+                return new StaticHttpRegionInfo(name, StringNames.NoTranslation, ip, ServerInfo).Cast<IRegionInfo>();
+            }
 
             _harmony.PatchAll();
             SubmergedCompatibility.Initialize();
