@@ -16,13 +16,13 @@ namespace TownOfUs
             position.AdjustPosition();
 
             __instance.text.text =
-                "<color=#00FF00FF>TownOfUs v" + TownOfUs.VersionString + "</color>\n" +
+                "<color=#00FF00FF>TownOfUs(我们的小镇) v" + TownOfUs.VersionString + "</color>\n" +
                 $"Ping: {AmongUsClient.Instance.Ping}ms\n" +
                 (!MeetingHud.Instance
-                    ? "<color=#00FF00FF>Modded By: Donners &</color>\n" +
+                    ? "<color=#00FF00FF>Modded(制作者): Donners &</color>\n" +
                     "<color=#00FF00FF>MyDragonBreath</color>\n" : "") +
                 (AmongUsClient.Instance.GameState != InnerNet.InnerNetClient.GameStates.Started
-                    ? "<color=#00FF00FF>Formerly: Slushiegoose & Polus.gg</color>" : "");
+                    ? "<color=#00FF00FF>Formerly(来源): Slushiegoose & Polus.gg</color>" : "");
         }
     }
 }
