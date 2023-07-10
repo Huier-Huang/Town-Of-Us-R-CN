@@ -28,13 +28,13 @@ namespace TownOfUs
                 if (GameOptionsManager.Instance.CurrentGameOptions.GameMode == GameModes.HideNSeek) return;
 
                 var builder = new StringBuilder();
-                builder.AppendLine("Press Tab To Change Page");
-                builder.AppendLine($"Currently Viewing Page ({(SettingsPage + 2)}/6)");
-                if (SettingsPage == 0) builder.AppendLine("General Mod Settings");
-                else if (SettingsPage == 1) builder.AppendLine("Crewmate Settings");
-                else if (SettingsPage == 2) builder.AppendLine("Neutral Settings");
-                else if (SettingsPage == 3) builder.AppendLine("Impostor Settings");
-                else if (SettingsPage == 4) builder.AppendLine("Modifier Settings");
+                builder.AppendLine("请按Tab切换");
+                builder.AppendLine($"当前页面:({(SettingsPage + 2)}/6)");
+                if (SettingsPage == 0) builder.AppendLine("模组常规设置");
+                else if (SettingsPage == 1) builder.AppendLine("船员职业设置");
+                else if (SettingsPage == 2) builder.AppendLine("中立职业设置");
+                else if (SettingsPage == 3) builder.AppendLine("内鬼职业设置");
+                else if (SettingsPage == 4) builder.AppendLine("附加职业设置");
 
                 if (SettingsPage == -1) builder.Append(new StringBuilder(__result));
 
