@@ -14,8 +14,8 @@ namespace TownOfUs.Roles
         public Escapist(PlayerControl player) : base(player)
         {
             Name = "逃逸者";
-            ImpostorText = () => "Get Away From Kills With Ease";
-            TaskText = () => "Teleport to get away from bodies";
+            ImpostorText = () => "轻松摆脱杀戮";
+            TaskText = () => "传送以远离尸体";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Escapist;
             AddToRoleHistory(RoleType);

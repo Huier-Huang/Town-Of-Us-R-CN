@@ -38,8 +38,8 @@ namespace TownOfUs.Roles
             IsUsingMimic = false;
             RoleType = RoleEnum.Glitch;
             AddToRoleHistory(RoleType);
-            ImpostorText = () => "Murder, Mimic, Hack... Data Lost";
-            TaskText = () => "Murder everyone to win\nFake Tasks:";
+            ImpostorText = () => "谋杀, 模仿, 黑客……数据丢失";
+            TaskText = () => "谋杀所有人赢得\n假任务:";
             Faction = Faction.NeutralKilling;
         }
 
@@ -231,7 +231,7 @@ namespace TownOfUs.Roles
                 hackText = new GameObject("_Player").AddComponent<ImportantTextTask>();
                 hackText.transform.SetParent(PlayerControl.LocalPlayer.transform, false);
                 hackText.Text =
-                    $"{__instance.ColorString}Hacked {hackPlayer.Data.PlayerName} ({CustomGameOptions.HackDuration}s)</color>";
+                    $"{__instance.ColorString} 黑入成功 {hackPlayer.Data.PlayerName} ({CustomGameOptions.HackDuration}s)</color>";
                 hackText.Index = hackPlayer.PlayerId;
                 tickDictionary.Add(hackPlayer.PlayerId, DateTime.UtcNow);
                 PlayerControl.LocalPlayer.myTasks.Insert(0, hackText);
@@ -341,7 +341,7 @@ namespace TownOfUs.Roles
                     var totalHacktime = (DateTime.UtcNow - tickDictionary[hackPlayer.PlayerId]).TotalMilliseconds /
                                         1000;
                     hackText.Text =
-                        $"{__instance.ColorString}Hacked {hackPlayer.Data.PlayerName} ({CustomGameOptions.HackDuration - Math.Round(totalHacktime)}s)</color>";
+                        $"{__instance.ColorString} 骇入 {hackPlayer.Data.PlayerName} ({CustomGameOptions.HackDuration - Math.Round(totalHacktime)}s)</color>";
                     if (MeetingHud.Instance || totalHacktime > CustomGameOptions.HackDuration || hackPlayer == null ||
                         hackPlayer.Data.IsDead)
                     {
@@ -394,7 +394,7 @@ namespace TownOfUs.Roles
                 var mimicText = new GameObject("_Player").AddComponent<ImportantTextTask>();
                 mimicText.transform.SetParent(PlayerControl.LocalPlayer.transform, false);
                 mimicText.Text =
-                    $"{__instance.ColorString}Mimicking {mimicPlayer.Data.PlayerName} ({CustomGameOptions.MimicDuration}s)</color>";
+                    $"{__instance.ColorString} 模仿 {mimicPlayer.Data.PlayerName} ({CustomGameOptions.MimicDuration}s)</color>";
                 PlayerControl.LocalPlayer.myTasks.Insert(0, mimicText);
 
                 while (true)
@@ -407,7 +407,7 @@ namespace TownOfUs.Roles
                         totalMimickTime = CustomGameOptions.MimicDuration;
                     }
                     mimicText.Text =
-                        $"{__instance.ColorString}Mimicking {mimicPlayer.Data.PlayerName} ({CustomGameOptions.MimicDuration - Math.Round(totalMimickTime)}s)</color>";
+                        $"{__instance.ColorString} 模仿 {mimicPlayer.Data.PlayerName} ({CustomGameOptions.MimicDuration - Math.Round(totalMimickTime)}s)</color>";
                     if (totalMimickTime > CustomGameOptions.MimicDuration ||
                         PlayerControl.LocalPlayer.Data.IsDead ||
                         AmongUsClient.Instance.GameState == InnerNetClient.GameStates.Ended)
@@ -661,7 +661,7 @@ namespace TownOfUs.Roles
                         !x.Data.Disconnected))
                     {
                         if (!player.Data.IsDead)
-                            __gInstance.MimicList.AddChat(player, "Click here");
+                            __gInstance.MimicList.AddChat(player, "点这里");
                         else
                         {
                             var deadBodies = Object.FindObjectsOfType<DeadBody>();
@@ -669,7 +669,7 @@ namespace TownOfUs.Roles
                                 if (body.ParentId == player.PlayerId)
                                 {
                                     player.Data.IsDead = false;
-                                    __gInstance.MimicList.AddChat(player, "Click here");
+                                    __gInstance.MimicList.AddChat(player, "点这里");
                                     player.Data.IsDead = true;
                                 }
                         }

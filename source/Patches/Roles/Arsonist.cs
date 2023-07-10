@@ -24,8 +24,8 @@ namespace TownOfUs.Roles
         public Arsonist(PlayerControl player) : base(player)
         {
             Name = "纵火犯";
-            ImpostorText = () => "Douse Players And Ignite The Light";
-            TaskText = () => "Douse players and ignite to kill all douses\nFake Tasks:";
+            ImpostorText = () => "燃尽一切吧";
+            TaskText = () => "涂油然后烧光\n假任务:";
             Color = Patches.Colors.Arsonist;
             LastDoused = DateTime.UtcNow;
             RoleType = RoleEnum.Arsonist;

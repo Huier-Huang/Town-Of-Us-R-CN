@@ -11,11 +11,11 @@ namespace TownOfUs.Roles
         {
             Name = "处刑人";
             ImpostorText = () =>
-                target == null ? "You don't have a target for some reason... weird..." : $"Vote {target.name} Out";
+                target == null ? "由于某种原因，你没有目标……奇怪的……" : $"处刑目标:{target.name}";
             TaskText = () =>
                 target == null
-                    ? "You don't have a target for some reason... weird..."
-                    : $"Vote {target.name} out!\nFake Tasks:";
+                    ? "由于某种原因，你没有目标……奇怪的……"
+                    : $"对 {target.name} 执行处刑!\n假任务:";
             Color = Patches.Colors.Executioner;
             RoleType = RoleEnum.Executioner;
             AddToRoleHistory(RoleType);

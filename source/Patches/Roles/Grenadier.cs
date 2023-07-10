@@ -21,8 +21,8 @@ namespace TownOfUs.Roles
         public Grenadier(PlayerControl player) : base(player)
         {
             Name = "掷弹兵";
-            ImpostorText = () => "Hinder The Crewmates' Vision";
-            TaskText = () => "Blind the crewmates to get sneaky kills";
+            ImpostorText = () => "让你们看看我的闪光弹";
+            TaskText = () => "闪瞎他们的眼睛";
             Color = Patches.Colors.Impostor;
             LastFlashed = DateTime.UtcNow;
             RoleType = RoleEnum.Grenadier;

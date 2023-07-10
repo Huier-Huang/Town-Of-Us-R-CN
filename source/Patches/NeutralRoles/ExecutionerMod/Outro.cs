@@ -18,7 +18,7 @@ namespace TownOfUs.NeutralRoles.ExecutionerMod
             array[0].NameText().text = role.ColorString + array[0].NameText().text + "</color>";
             __instance.BackgroundBar.material.color = role.Color;
             var text = Object.Instantiate(__instance.WinText);
-            text.text = "Executioner Wins!";
+            text.text = "处刑人 获胜!";
             text.color = role.Color;
             var pos = __instance.WinText.transform.localPosition;
             pos.y = 1.5f;

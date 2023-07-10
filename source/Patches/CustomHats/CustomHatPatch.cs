@@ -19,7 +19,7 @@ namespace TownOfUs.Patches.CustomHats
             __instance.currentHat = DestroyableSingleton<HatManager>.Instance.GetHatById(DataManager.Player.Customization.Hat);
             var allHats = DestroyableSingleton<HatManager>.Instance.GetUnlockedHats();
             var hatGroups = new SortedList<string, List<HatData>>(
-                new PaddedComparer<string>("Vanilla", "")
+                new PaddedComparer<string>("原版", "")
             );
             foreach (var hat in allHats)
             {

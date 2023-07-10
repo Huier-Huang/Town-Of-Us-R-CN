@@ -6,7 +6,7 @@ namespace TownOfUs.CustomOption
             CustomOptionType.Toggle,
             value)
         {
-            Format = val => (bool) val ? "On" : "Off";
+            Format = val => (bool) val ? "开启" : "关闭";
         }
 
         protected internal bool Get()

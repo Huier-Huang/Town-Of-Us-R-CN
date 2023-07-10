@@ -26,8 +26,8 @@ namespace TownOfUs.Roles
         public Doomsayer(PlayerControl player) : base(player)
         {
             Name = "末日预示者";
-            ImpostorText = () => "Guess People's Roles To Win!";
-            TaskText = () => "Win by guessing player's roles\nFake Tasks:";
+            ImpostorText = () => "猜测人们的角色来获胜!";
+            TaskText = () => "通过猜测玩家的角色获胜\n假任务:";
             Color = Patches.Colors.Doomsayer;
             RoleType = RoleEnum.Doomsayer;
             LastObserved = DateTime.UtcNow;
@@ -40,30 +40,30 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.MayorOn > 0) ColorMapping.Add("市长", Colors.Mayor);
                 if (CustomGameOptions.SheriffOn > 0 || (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0 && CustomGameOptions.BecomeOnVampDeaths == BecomeEnum.Sheriff)) ColorMapping.Add("警长", Colors.Sheriff);
                 if (CustomGameOptions.EngineerOn > 0) ColorMapping.Add("工程师", Colors.Engineer);
-                if (CustomGameOptions.SwapperOn > 0) ColorMapping.Add("Swapper", Colors.Swapper);
+                if (CustomGameOptions.SwapperOn > 0) ColorMapping.Add("换票师", Colors.Swapper);
                 if (CustomGameOptions.InvestigatorOn > 0) ColorMapping.Add("调查员", Colors.Investigator);
-                if (CustomGameOptions.MedicOn > 0) ColorMapping.Add("Medic", Colors.Medic);
+                if (CustomGameOptions.MedicOn > 0) ColorMapping.Add("医生", Colors.Medic);
                 if (CustomGameOptions.SeerOn > 0) ColorMapping.Add("预言家", Colors.Seer);
                 if (CustomGameOptions.SpyOn > 0) ColorMapping.Add("间谍", Colors.Spy);
                 if (CustomGameOptions.SnitchOn > 0) ColorMapping.Add("告密者", Colors.Snitch);
-                if (CustomGameOptions.AltruistOn > 0) ColorMapping.Add("Altruist", Colors.Altruist);
+                if (CustomGameOptions.AltruistOn > 0) ColorMapping.Add("殉道者", Colors.Altruist);
                 if (CustomGameOptions.VigilanteOn > 0 || (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0 && CustomGameOptions.BecomeOnVampDeaths == BecomeEnum.Vigilante)) ColorMapping.Add("侠客", Colors.Vigilante);
-                if (CustomGameOptions.VeteranOn > 0 || (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0 && CustomGameOptions.BecomeOnVampDeaths == BecomeEnum.Veteran)) ColorMapping.Add("Veteran", Colors.Veteran);
-                if (CustomGameOptions.TrackerOn > 0) ColorMapping.Add("Tracker", Colors.Tracker);
-                if (CustomGameOptions.TrapperOn > 0) ColorMapping.Add("Trapper", Colors.Trapper);
+                if (CustomGameOptions.VeteranOn > 0 || (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0 && CustomGameOptions.BecomeOnVampDeaths == BecomeEnum.Veteran)) ColorMapping.Add("老兵", Colors.Veteran);
+                if (CustomGameOptions.TrackerOn > 0) ColorMapping.Add("追踪者", Colors.Tracker);
+                if (CustomGameOptions.TrapperOn > 0) ColorMapping.Add("陷阱师", Colors.Trapper);
                 if (CustomGameOptions.TransporterOn > 0) ColorMapping.Add("传送师", Colors.Transporter);
-                if (CustomGameOptions.MediumOn > 0) ColorMapping.Add("Medium", Colors.Medium);
+                if (CustomGameOptions.MediumOn > 0) ColorMapping.Add("灵媒", Colors.Medium);
                 if (CustomGameOptions.MysticOn > 0) ColorMapping.Add("招魂师", Colors.Mystic);
-                if (CustomGameOptions.DetectiveOn > 0) ColorMapping.Add("Detective", Colors.Detective);
-                if (CustomGameOptions.ImitatorOn > 0) ColorMapping.Add("Imitator", Colors.Imitator);
-                if (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("Vampire Hunter", Colors.VampireHunter);
-                if (CustomGameOptions.ProsecutorOn > 0) ColorMapping.Add("Prosecutor", Colors.Prosecutor);
-                if (CustomGameOptions.OracleOn > 0) ColorMapping.Add("Oracle", Colors.Oracle);
+                if (CustomGameOptions.DetectiveOn > 0) ColorMapping.Add("侧写师", Colors.Detective);
+                if (CustomGameOptions.ImitatorOn > 0) ColorMapping.Add("效颦模仿者", Colors.Imitator);
+                if (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("吸血鬼杀手", Colors.VampireHunter);
+                if (CustomGameOptions.ProsecutorOn > 0) ColorMapping.Add("监察管", Colors.Prosecutor);
+                if (CustomGameOptions.OracleOn > 0) ColorMapping.Add("神之使徒", Colors.Oracle);
                 if (CustomGameOptions.AurialOn > 0) ColorMapping.Add("修仙者", Colors.Aurial);
 
                 if (CustomGameOptions.DoomsayerGuessImpostors && !PlayerControl.LocalPlayer.Is(Faction.Impostors))
                 {
-                    ColorMapping.Add("Impostor", Colors.Impostor);
+                    ColorMapping.Add("内鬼", Colors.Impostor);
                     if (CustomGameOptions.JanitorOn > 0) ColorMapping.Add("清洁工", Colors.Impostor);
                     if (CustomGameOptions.MorphlingOn > 0) ColorMapping.Add("化形者", Colors.Impostor);
                     if (CustomGameOptions.MinerOn > 0) ColorMapping.Add("矿工", Colors.Impostor);

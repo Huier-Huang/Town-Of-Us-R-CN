@@ -41,7 +41,7 @@ namespace TownOfUs.Patches.CustomHats
 
                 var hatData = new List<HatData>();
                 hatData.AddRange(DestroyableSingleton<HatManager>.Instance.allHats);
-                hatData.ForEach((Action<HatData>)(x => x.StoreName = "Vanilla"));
+                hatData.ForEach((Action<HatData>)(x => x.StoreName = "原版"));
 
                 var originalCount = DestroyableSingleton<HatManager>.Instance.allHats.ToList().Count;
                 hatBehaviours.Reverse();
