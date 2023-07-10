@@ -27,7 +27,7 @@ jobs:
           dotnet-version: 6.x
 
       - name: build
-        run: dotnet build TownOfUs.csproj
+        run: dotnet build source/TownOfUs.csproj
 
       - name: install wget
         run: sudo apt install wget
@@ -48,7 +48,7 @@ jobs:
         run: sudo chmod -R 777 ./TownOfUs-R-CN/
 
       - name: move
-        run: mv bin/Debug/net6.0/TownOfUs.dll ./TownOfUs-R-CN/BepInEx/plugins/
+        run: mv source/bin/Debug/net6.0/TownOfUs.dll ./TownOfUs-R-CN/BepInEx/plugins/
 
       - name: upload TownOfUs-R-CN
         uses: actions/upload-artifact@v3
