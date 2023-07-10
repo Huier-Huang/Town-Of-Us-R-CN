@@ -22,7 +22,8 @@ namespace TownOfUs
                     ? "<color=#00FF00FF>Modded(制作者): Donners &</color>\n" +
                     "<color=#00FF00FF>MyDragonBreath</color>\n" : "") +
                 (AmongUsClient.Instance.GameState != InnerNet.InnerNetClient.GameStates.Started
-                    ? "<color=#00FF00FF>Formerly(来源): Slushiegoose & Polus.gg</color>" : "");
+                    ? "<color=#00FF00FF>Formerly(来源): Slushiegoose & Polus.gg</color>" : "") +
+                    "\n汉化: 天寸梦初, Z某";
         }
     }
 }

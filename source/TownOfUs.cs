@@ -121,6 +121,7 @@ namespace TownOfUs
         public ConfigEntry<string> Ip { get; set; }
 
         public ConfigEntry<ushort> Port { get; set; }
+        private static readonly ServerManager serverManager = DestroyableSingleton<ServerManager>.Instance;
 
         public override void Load()
         {
@@ -215,16 +216,8 @@ namespace TownOfUs
                 catch { }
             }));
 
-            List<IRegionInfo> regionInfos = ServerManager._instance.AvailableRegions.ToList();
-            var server = regionInfos.FindAll(n => n.Name== "梦服上海(新)" || n.Name == "梦服上海（新）" || n.PingServer == "au-sh.pafyx.top" || n.PingServer == "http://au-sh-pafyx.top");
-            if(server == null)
-            {
-                ServerManager._instance.AddOrUpdateRegion(createHttp("au-sh.pafyx.top", "梦服上海(新)", 22000, false));
-            }
-            if(!regionInfos.Contains(createHttp("server.among-us.top", "cmd香港服务器", 443, true)))
-            {
-                ServerManager._instance.AddOrUpdateRegion(createHttp("server.among-us.top", "cmd香港服务器", 443, true));
-            }
+            serverManager.AddOrUpdateRegion(createHttp("au-sh.pafyx.top", "梦服上海(新)", 22000, false));
+            serverManager.AddOrUpdateRegion(createHttp("server.among-us.top", "cmd香港服务器", 443, true));
 
             static IRegionInfo createHttp(string ip, string name, ushort port, bool ishttps)
             {
