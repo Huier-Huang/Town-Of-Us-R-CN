@@ -733,14 +733,14 @@ namespace TownOfUs.CustomOption
                 new CustomNumberOption(num++, MultiMenu.main, "增加了每次复活的冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             MaxReveals = new CustomNumberOption(num++, MultiMenu.main, "最大复活次数", 5, 1, 15, 1);
 
-            MapSettings = new CustomHeaderOption(num++, MultiMenu.main, "Map Settings");
-            RandomMapEnabled = new CustomToggleOption(num++, MultiMenu.main, "Choose Random Map", false);
-            RandomMapSkeld = new CustomNumberOption(num++, MultiMenu.main, "Skeld Chance", 0f, 0f, 100f, 10f, PercentFormat);
-            RandomMapMira = new CustomNumberOption(num++, MultiMenu.main, "Mira Chance", 0f, 0f, 100f, 10f, PercentFormat);
-            RandomMapPolus = new CustomNumberOption(num++, MultiMenu.main, "Polus Chance", 0f, 0f, 100f, 10f, PercentFormat);
-            RandomMapAirship = new CustomNumberOption(num++, MultiMenu.main, "Airship Chance", 0f, 0f, 100f, 10f, PercentFormat);
-            RandomMapSubmerged = new CustomNumberOption(num++, MultiMenu.main, "Submerged Chance", 0f, 0f, 100f, 10f, PercentFormat);
-            AutoAdjustSettings = new CustomToggleOption(num++, MultiMenu.main, "Auto Adjust Settings", false);
+            MapSettings = new CustomHeaderOption(num++, MultiMenu.main, "地图设置");
+            RandomMapEnabled = new CustomToggleOption(num++, MultiMenu.main, "随机地图", false);
+            RandomMapSkeld = new CustomNumberOption(num++, MultiMenu.main, "启用Skeld", 0f, 0f, 100f, 10f, PercentFormat);
+            RandomMapMira = new CustomNumberOption(num++, MultiMenu.main, "启用Mira", 0f, 0f, 100f, 10f, PercentFormat);
+            RandomMapPolus = new CustomNumberOption(num++, MultiMenu.main, "启用Polus", 0f, 0f, 100f, 10f, PercentFormat);
+            RandomMapAirship = new CustomNumberOption(num++, MultiMenu.main, "启用Airship", 0f, 0f, 100f, 10f, PercentFormat);
+            RandomMapSubmerged = new CustomNumberOption(num++, MultiMenu.main, "启用Submerged", 0f, 0f, 100f, 10f, PercentFormat);
+            AutoAdjustSettings = new CustomToggleOption(num++, MultiMenu.main, "自动调整设置", false);
             SmallMapHalfVision = new CustomToggleOption(num++, MultiMenu.main, "Half Vision On Skeld/Mira HQ", false);
             SmallMapDecreasedCooldown =
                 new CustomNumberOption(num++, MultiMenu.main, "Mira HQ Decreased Cooldowns", 0f, 0f, 15f, 2.5f, CooldownFormat);
@@ -764,40 +764,40 @@ namespace TownOfUs.CustomOption
                 new CustomToggleOption(num++, MultiMenu.main, "Reboot Wifi And Chart Course Swapped", false);
 
             CustomGameSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Custom Game Settings");
-            ColourblindComms = new CustomToggleOption(num++, MultiMenu.main, "Camouflaged Comms", false);
-            ImpostorSeeRoles = new CustomToggleOption(num++, MultiMenu.main, "Impostors Can See The Roles Of Their Team", false);
+                new CustomHeaderOption(num++, MultiMenu.main, "自定义游戏社长");
+            ColourblindComms = new CustomToggleOption(num++, MultiMenu.main, "伪装的审稿", false);
+            ImpostorSeeRoles = new CustomToggleOption(num++, MultiMenu.main, "内鬼可见队身份", false);
             DeadSeeRoles =
-                new CustomToggleOption(num++, MultiMenu.main, "Dead Can See Everyone's Roles/Votes", false);
+                new CustomToggleOption(num++, MultiMenu.main, "幽灵可见角色和投票", false);
             InitialCooldowns =
-                new CustomNumberOption(num++, MultiMenu.main, "Game Start Cooldowns", 10f, 10f, 30f, 2.5f, CooldownFormat);
-            ParallelMedScans = new CustomToggleOption(num++, MultiMenu.main, "Parallel Medbay Scans", false);
-            SkipButtonDisable = new CustomStringOption(num++, MultiMenu.main, "Disable Meeting Skip Button", new[] { "No", "Emergency", "Always" });
-            HiddenRoles = new CustomToggleOption(num++, MultiMenu.main, "Enable Hidden Roles", true);
-            FirstDeathShield = new CustomToggleOption(num++, MultiMenu.main, "First Death Shield Next Game", false);
+                new CustomNumberOption(num++, MultiMenu.main, "游戏初始冷却", 10f, 10f, 30f, 2.5f, CooldownFormat);
+            ParallelMedScans = new CustomToggleOption(num++, MultiMenu.main, "可多人扫描", false);
+            SkipButtonDisable = new CustomStringOption(num++, MultiMenu.main, "会议不可跳过", new[] { "无", "破坏情况", "总是" });
+            HiddenRoles = new CustomToggleOption(num++, MultiMenu.main, "启用隐藏角色", true);
+            FirstDeathShield = new CustomToggleOption(num++, MultiMenu.main, "下一局是第一个死亡盾", false);
 
             TaskTrackingSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Task Tracking Settings");
-            SeeTasksDuringRound = new CustomToggleOption(num++, MultiMenu.main, "See Tasks During Round", false);
-            SeeTasksDuringMeeting = new CustomToggleOption(num++, MultiMenu.main, "See Tasks During Meetings", false);
-            SeeTasksWhenDead = new CustomToggleOption(num++, MultiMenu.main, "See Tasks When Dead", true);
+                new CustomHeaderOption(num++, MultiMenu.main, "任务设置");
+            SeeTasksDuringRound = new CustomToggleOption(num++, MultiMenu.main, "查看对局期间的任务", false);
+            SeeTasksDuringMeeting = new CustomToggleOption(num++, MultiMenu.main, "查看会议期间的任务", false);
+            SeeTasksWhenDead = new CustomToggleOption(num++, MultiMenu.main, "查看死亡时的任务", true);
 
-            Assassin = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Assassin Ability</color>");
-            NumberOfImpostorAssassins = new CustomNumberOption(num++, MultiMenu.imposter, "Number Of Impostor Assassins", 1, 0, 4, 1);
-            NumberOfNeutralAssassins = new CustomNumberOption(num++, MultiMenu.imposter, "Number Of Neutral Assassins", 1, 0, 5, 1);
-            AmneTurnImpAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "Amnesiac Turned Impostor Gets Ability", false);
-            AmneTurnNeutAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "Amnesiac Turned Neutral Killing Gets Ability", false);
-            TraitorCanAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "Traitor Gets Ability", false);
-            AssassinKills = new CustomNumberOption(num++, MultiMenu.imposter, "Number Of Assassin Kills", 1, 1, 15, 1);
-            AssassinMultiKill = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Kill More Than Once Per Meeting", false);
-            AssassinCrewmateGuess = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess \"Crewmate\"", false);
-            AssassinGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess Neutral Benign Roles", false);
-            AssassinGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess Neutral Evil Roles", false);
-            AssassinGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess Neutral Killing Roles", false);
-            AssassinGuessImpostors = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess Impostor Roles", false);
-            AssassinGuessModifiers = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess Crewmate Modifiers", false);
-            AssassinGuessLovers = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess Lovers", false);
-            AssassinateAfterVoting = new CustomToggleOption(num++, MultiMenu.imposter, "Assassin Can Guess After Voting", false);
+            Assassin = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>刺客的能力</color>");
+            NumberOfImpostorAssassins = new CustomNumberOption(num++, MultiMenu.imposter, "内鬼刺客的数量", 1, 0, 4, 1);
+            NumberOfNeutralAssassins = new CustomNumberOption(num++, MultiMenu.imposter, "中立刺客数量", 1, 0, 5, 1);
+            AmneTurnImpAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "失忆者变成内鬼获得能力", false);
+            AmneTurnNeutAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "失忆者变成击杀型中立获得能力", false);
+            TraitorCanAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "叛徒获得能力", false);
+            AssassinKills = new CustomNumberOption(num++, MultiMenu.imposter, "猜测次数", 1, 1, 15, 1);
+            AssassinMultiKill = new CustomToggleOption(num++, MultiMenu.imposter, "刺客每次会议可以杀死不止一次", false);
+            AssassinCrewmateGuess = new CustomToggleOption(num++, MultiMenu.imposter, "刺客能猜出船员", false);
+            AssassinGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.imposter, "刺客可以猜测善良中立", false);
+            AssassinGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.imposter, "刺客可以猜测邪恶中立", false);
+            AssassinGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.imposter, "刺客可以猜测击杀型中立", false);
+            AssassinGuessImpostors = new CustomToggleOption(num++, MultiMenu.imposter, "刺客能猜测内鬼", false);
+            AssassinGuessModifiers = new CustomToggleOption(num++, MultiMenu.imposter, "刺客能猜测船员附加", false);
+            AssassinGuessLovers = new CustomToggleOption(num++, MultiMenu.imposter, "刺客能猜测恋人", false);
+            AssassinateAfterVoting = new CustomToggleOption(num++, MultiMenu.imposter, "投票后可猜测", false);
 
             Aurial =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B34D99FF>修仙者</color>");
@@ -901,370 +901,370 @@ namespace TownOfUs.CustomOption
             MinAmountOfTimeInTrap =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "在陷阱中停留最小时间", 1f, 0f, 15f, 0.5f, CooldownFormat);
             TrapCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Trap Cooldown", 25f, 10f, 40f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "放置冷却", 25f, 10f, 40f, 2.5f, CooldownFormat);
             TrapsRemoveOnNewRound =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Traps Removed After Each Round", true);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "每回合后移除陷阱", true);
             MaxTraps =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Number Of Traps Per Game", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "每局最大陷阱数量", 5, 1, 15, 1);
             TrapSize =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Trap Size", 0.25f, 0.05f, 1f, 0.05f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "陷阱大小", 0.25f, 0.05f, 1f, 0.05f, MultiplierFormat);
             MinAmountOfPlayersInTrap =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Minimum Number Of Roles Required To Trigger Trap", 3, 1, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "触发陷阱所需要玩家数", 3, 1, 5, 1);
 
             Sheriff =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFFF00FF>Sheriff</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFFF00FF>警长</color>");
             SheriffKillOther =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Miskill Kills Crewmate", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长击杀船员自杀", false);
             SheriffKillsDoomsayer =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Doomsayer", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀末日预示者", false);
             SheriffKillsExecutioner =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Executioner", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀处刑人", false);
             SheriffKillsJester =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Jester", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀小丑", false);
             SheriffKillsArsonist =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Arsonist", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀纵火犯", false);
             SheriffKillsGlitch =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills The Glitch", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀混沌", false);
             SheriffKillsJuggernaut =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Juggernaut", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀剑圣", false);
             SheriffKillsPlaguebearer =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Plaguebearer", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀瘟疫之源", false);
             SheriffKillsVampire =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Vampire", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀吸血鬼", false);
             SheriffKillsWerewolf =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Kills Werewolf", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀月下狼人", false);
             SheriffKillCd =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Sheriff Kill Cooldown", 25f, 10f, 40f, 2.5f, CooldownFormat);
-            SheriffBodyReport = new CustomToggleOption(num++, MultiMenu.crewmate, "Sheriff Can Report Who They've Killed");
+                new CustomNumberOption(num++, MultiMenu.crewmate, "警长击杀冷却时间", 25f, 10f, 40f, 2.5f, CooldownFormat);
+            SheriffBodyReport = new CustomToggleOption(num++, MultiMenu.crewmate, "警长可以报告击杀者");
 
             VampireHunter =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B3B3E6FF>Vampire Hunter</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B3B3E6FF>吸血鬼杀手</color>");
             StakeCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Stake Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            MaxFailedStakesPerGame = new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Failed Stakes Per Game", 5, 1, 15, 1);
-            CanStakeRoundOne = new CustomToggleOption(num++, MultiMenu.crewmate, "Can Stake Round One", false);
-            SelfKillAfterFinalStake = new CustomToggleOption(num++, MultiMenu.crewmate, "Self Kill On Failure To Kill A Vamp With All Stakes", false);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "打赌冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            MaxFailedStakesPerGame = new CustomNumberOption(num++, MultiMenu.crewmate, "每局最多打赌次数", 5, 1, 15, 1);
+            CanStakeRoundOne = new CustomToggleOption(num++, MultiMenu.crewmate, "第一轮能打赌", false);
+            SelfKillAfterFinalStake = new CustomToggleOption(num++, MultiMenu.crewmate, "用所有木桩杀死一个吸血鬼失败而自杀", false);
             BecomeOnVampDeaths =
-                new CustomStringOption(num++, MultiMenu.crewmate, "What Vampire Hunter Becomes On All Vampire Deaths", new[] { "船员", "警长", "Veteran", "侠客" });
+                new CustomStringOption(num++, MultiMenu.crewmate, "吸血鬼猎人在所有吸血鬼死亡事件中扮演的角色", new[] { "船员", "警长", "老兵", "侠客" });
 
             Veteran =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#998040FF>Veteran</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#998040FF>老兵</color>");
             KilledOnAlert =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Can Be Killed On Alert", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "警戒时能被击杀", false);
             AlertCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Alert Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "警戒冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             AlertDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Alert Duration", 10f, 5f, 15f, 1f, CooldownFormat);
-            MaxAlerts = new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Number Of Alerts", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "警戒持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
+            MaxAlerts = new CustomNumberOption(num++, MultiMenu.crewmate, "最大警戒次数", 5, 1, 15, 1);
 
-            Vigilante = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFFF99FF>Vigilante</color>");
-            VigilanteKills = new CustomNumberOption(num++, MultiMenu.crewmate, "Number Of Vigilante Kills", 1, 1, 15, 1);
-            VigilanteMultiKill = new CustomToggleOption(num++, MultiMenu.crewmate, "Vigilante Can Kill More Than Once Per Meeting", false);
-            VigilanteGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.crewmate, "Vigilante Can Guess Neutral Benign Roles", false);
-            VigilanteGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.crewmate, "Vigilante Can Guess Neutral Evil Roles", false);
-            VigilanteGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.crewmate, "Vigilante Can Guess Neutral Killing Roles", false);
-            VigilanteGuessLovers = new CustomToggleOption(num++, MultiMenu.crewmate, "Vigilante Can Guess Lovers", false);
-            VigilanteAfterVoting = new CustomToggleOption(num++, MultiMenu.crewmate, "Vigilante Can Guess After Voting", false);
+            Vigilante = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFFF99FF>侠客</color>");
+            VigilanteKills = new CustomNumberOption(num++, MultiMenu.crewmate, "侠客猜测次数", 1, 1, 15, 1);
+            VigilanteMultiKill = new CustomToggleOption(num++, MultiMenu.crewmate, "侠客可多次猜测", false);
+            VigilanteGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测善良型中立", false);
+            VigilanteGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测邪恶型中立", false);
+            VigilanteGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测击杀型中里", false);
+            VigilanteGuessLovers = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测恋人", false);
+            VigilanteAfterVoting = new CustomToggleOption(num++, MultiMenu.crewmate, "可在投票后猜测", false);
 
-            Altruist = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#660000FF>Altruist</color>");
+            Altruist = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#660000FF>殉道</color>");
             ReviveDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Altruist Revive Duration", 10f, 1f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "殉道复活所需时间", 10f, 1f, 15f, 1f, CooldownFormat);
             AltruistTargetBody =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Target's Body Disappears On Beginning Of Revive", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "目标的身体在复活开始时消失", false);
 
             Medic =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#006600FF>Medic</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#006600FF>医生</color>");
             ShowShielded =
-                new CustomStringOption(num++, MultiMenu.crewmate, "Show Shielded Player",
-                    new[] { "Self", "Medic", "Self+Medic", "Everyone" });
+                new CustomStringOption(num++, MultiMenu.crewmate, "可见护盾玩家",
+                    new[] { "被保护者", "医生", "被保护者和医生", "所有人" });
             WhoGetsNotification =
-                new CustomStringOption(num++, MultiMenu.crewmate, "Who Gets Murder Attempt Indicator",
-                    new[] { "Medic", "Shielded", "Everyone", "Nobody" });
-            ShieldBreaks = new CustomToggleOption(num++, MultiMenu.crewmate, "Shield Breaks On Murder Attempt", false);
-            MedicReportSwitch = new CustomToggleOption(num++, MultiMenu.crewmate, "Show Medic Reports");
+                new CustomStringOption(num++, MultiMenu.crewmate, "谁可察觉到尝试击杀",
+                    new[] { "医生", "被保护者", "所有人", "没有人" });
+            ShieldBreaks = new CustomToggleOption(num++, MultiMenu.crewmate, "尝试击杀时盾牌破裂", false);
+            MedicReportSwitch = new CustomToggleOption(num++, MultiMenu.crewmate, "显示医疗报告");
             MedicReportNameDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Time Where Medic Will Have Name", 0f, 0f, 60f, 2.5f,
+                new CustomNumberOption(num++, MultiMenu.crewmate, "多少时间内能获取名称", 0f, 0f, 60f, 2.5f,
                     CooldownFormat);
             MedicReportColorDuration =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Time Where Medic Will Have Color Type", 15f, 0f, 60f, 2.5f,
+                new CustomNumberOption(num++, MultiMenu.crewmate, "多少时间内能获取颜色和阵营", 15f, 0f, 60f, 2.5f,
                     CooldownFormat);
 
             Engineer =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFA60AFF>Engineer</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#FFA60AFF>工程师</color>");
             MaxFixes =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Number Of Fixes", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "最大修复次数", 5, 1, 15, 1);
 
             Medium =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>Medium</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>灵媒</color>");
             MediateCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Mediate Cooldown", 10f, 1f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "通灵冷却", 10f, 1f, 15f, 1f, CooldownFormat);
             ShowMediatePlayer =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Reveal Appearance Of Mediate Target", true);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "可通灵出目标样貌", true);
             ShowMediumToDead =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Reveal The Medium To The Mediate Target", true);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "可通灵对象", true);
             DeadRevealed =
-                new CustomStringOption(num++, MultiMenu.crewmate, "Who Is Revealed With Mediate", new[] { "Oldest Dead", "Newest Dead", "All Dead" });
+                new CustomStringOption(num++, MultiMenu.crewmate, "谁被通灵", new[] { "之前的尸体", "新尸体", "所有尸体" });
 
             Prosecutor =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B38000FF>Prosecutor</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B38000FF>检察官</color>");
             ProsDiesOnIncorrectPros =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Prosecutor Dies When They Exile A Crewmate", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "检察官在流放一名船员时死亡", false);
 
             Swapper =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#66E666FF>Swapper</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#66E666FF>换票师</color>");
             SwapperButton =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Swapper Can Button", true);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "换票师能召开会议", true);
 
             Transporter =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#00EEFFFF>Transporter</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#00EEFFFF>传送师</color>");
             TransportCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Transport Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "传送冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             TransportMaxUses =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "Maximum Number Of Transports", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "最大传送次数", 5, 1, 15, 1);
             TransporterVitals =
-                new CustomToggleOption(num++, MultiMenu.crewmate, "Transporter Can Use Vitals", false);
+                new CustomToggleOption(num++, MultiMenu.crewmate, "传送者可以使用生命体征", false);
 
-            Amnesiac = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#80B2FFFF>Amnesiac</color>");
+            Amnesiac = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#80B2FFFF>失忆者</color>");
             RememberArrows =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Amnesiac Gets Arrows Pointing To Dead Bodies", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "能得到指向尸体的箭头", false);
             RememberArrowDelay =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Time After Death Arrow Appears", 5f, 0f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "箭头持续时间", 5f, 0f, 15f, 1f, CooldownFormat);
 
             GuardianAngel =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#B3FFFFFF>Guardian Angel</color>");
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#B3FFFFFF>守护天使</color>");
             ProtectCd =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Protect Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "守护冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             ProtectDuration =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Protect Duration", 10f, 5f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "守护持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
             ProtectKCReset =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Kill Cooldown Reset When Protected", 2.5f, 0f, 15f, 0.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "受保护时击杀冷却重置", 2.5f, 0f, 15f, 0.5f, CooldownFormat);
             MaxProtects =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Maximum Number Of Protects", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.neutral, "最大保护数", 5, 1, 15, 1);
             ShowProtect =
-                new CustomStringOption(num++, MultiMenu.neutral, "Show Protected Player",
-                    new[] { "Self", "守护天使", "Self+GA", "Everyone" });
-            GaOnTargetDeath = new CustomStringOption(num++, MultiMenu.neutral, "GA Becomes On Target Dead",
-                new[] { "Crew", "失忆者", "幸存者", "小丑" });
+                new CustomStringOption(num++, MultiMenu.neutral, "显示保护玩家",
+                    new[] { "被守护者", "守护天使", "被守护者和天使", "所有人" });
+            GaOnTargetDeath = new CustomStringOption(num++, MultiMenu.neutral, "目标死亡后成为",
+                new[] { "船员", "失忆者", "幸存者", "小丑" });
             GATargetKnows =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Target Knows GA Exists", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "目标知道被守护", false);
             GAKnowsTargetRole =
-                new CustomToggleOption(num++, MultiMenu.neutral, "GA Knows Targets Role", false);
-            EvilTargetPercent = new CustomNumberOption(num++, MultiMenu.neutral, "Odds Of Target Being Evil", 20f, 0f, 100f, 10f,
+                new CustomToggleOption(num++, MultiMenu.neutral, "守护天使得知目标职业", false);
+            EvilTargetPercent = new CustomNumberOption(num++, MultiMenu.neutral, "目标是邪恶概率", 20f, 0f, 100f, 10f,
                 PercentFormat);
 
             Survivor =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>Survivor</color>");
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FFE64DFF>幸存者</color>");
             VestCd =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Vest Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "防弹衣冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             VestDuration =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Vest Duration", 10f, 5f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "反弹衣持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
             VestKCReset =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Kill Cooldown Reset On Attack", 2.5f, 0f, 15f, 0.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "攻击时杀戮冷却时间重置", 2.5f, 0f, 15f, 0.5f, CooldownFormat);
             MaxVests =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Maximum Number Of Vests", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.neutral, "防弹衣最大使用次数", 5, 1, 15, 1);
 
-            Doomsayer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF80FF>Doomsayer</color>");
+            Doomsayer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF80FF>末日告示者</color>");
             ObserveCooldown =
                 new CustomNumberOption(num++, MultiMenu.neutral, "Observe Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            DoomsayerGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Neutral Benign Roles", false);
-            DoomsayerGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Neutral Evil Roles", false);
-            DoomsayerGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Neutral Killing Roles", false);
-            DoomsayerGuessImpostors = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess Impostor Roles", false);
-            DoomsayerAfterVoting = new CustomToggleOption(num++, MultiMenu.neutral, "Doomsayer Can Guess After Voting", false);
-            DoomsayerGuessesToWin = new CustomNumberOption(num++, MultiMenu.neutral, "Number Of Doomsayer Kills To Win", 3, 1, 5, 1);
+            DoomsayerGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测善良中立", false);
+            DoomsayerGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测邪恶中立", false);
+            DoomsayerGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测击杀型中立", false);
+            DoomsayerGuessImpostors = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测内鬼", false);
+            DoomsayerAfterVoting = new CustomToggleOption(num++, MultiMenu.neutral, "投票后可猜测", false);
+            DoomsayerGuessesToWin = new CustomNumberOption(num++, MultiMenu.neutral, "多少次击杀获胜", 3, 1, 5, 1);
 
             Executioner =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Executioner</color>");
-            OnTargetDead = new CustomStringOption(num++, MultiMenu.neutral, "Executioner Becomes On Target Dead",
-                new[] { "Crew", "失忆者", "幸存者", "小丑" });
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C4005FF>处刑人</color>");
+            OnTargetDead = new CustomStringOption(num++, MultiMenu.neutral, "目标死亡后成为",
+                new[] { "船员", "失忆者", "幸存者", "小丑" });
             ExecutionerButton =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Executioner Can Button", true);
+                new CustomToggleOption(num++, MultiMenu.neutral, "处刑人能召开会议", true);
 
             Jester =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FFBFCCFF>Jester</color>");
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FFBFCCFF>小丑</color>");
             JesterButton =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Jester Can Button", true);
+                new CustomToggleOption(num++, MultiMenu.neutral, "小丑能召开会议", true);
             JesterVent =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Jester Can Hide In Vents", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "小丑能使用通风口", false);
             JesterImpVision =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Jester Has Impostor Vision", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "小丑有内鬼视野", false);
 
             Phantom =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#662962FF>Phantom</color>");
+    new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#662962FF>幻影</color>");
             PhantomTasksRemaining =
-                 new CustomNumberOption(num++, MultiMenu.neutral, "Tasks Remaining When Phantom Can Be Clicked", 5, 1, 15, 1);
+                 new CustomNumberOption(num++, MultiMenu.neutral, "可以点击幻影时幻影任务剩于", 5, 1, 15, 1);
 
-            Arsonist = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FF4D00FF>Arsonist</color>");
+            Arsonist = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#FF4D00FF>纵火狂</color>");
             DouseCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Douse Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "浇油冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             MaxDoused =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Maximum Alive Players Doused", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.neutral, "存活玩家最大可以被浇油数量", 5, 1, 15, 1);
             ArsoImpVision =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Arsonist Has Impostor Vision", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "纵火狂有内鬼视野", false);
             IgniteCdRemoved =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Ignite Cooldown Removed When Arsonist Is Last Killer", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "当纵火狂成为最后的击杀类时，没有点火冷却", false);
 
             Juggernaut =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C004DFF>Juggernaut</color>");
-            JuggKillCooldown = new CustomNumberOption(num++, MultiMenu.neutral, "Juggernaut Initial Kill Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            ReducedKCdPerKill = new CustomNumberOption(num++, MultiMenu.neutral, "Reduced Kill Cooldown Per Kill", 5f, 2.5f, 10f, 2.5f, CooldownFormat);
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C004DFF>剑圣</color>");
+            JuggKillCooldown = new CustomNumberOption(num++, MultiMenu.neutral, "剑圣开始击杀冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            ReducedKCdPerKill = new CustomNumberOption(num++, MultiMenu.neutral, "每次击杀击杀CD减少", 5f, 2.5f, 10f, 2.5f, CooldownFormat);
             JuggVent =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Juggernaut Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "剑圣可以使用管道", false);
 
-            Plaguebearer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#E6FFB3FF>Plaguebearer</color>");
+            Plaguebearer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#E6FFB3FF>瘟疫之源</color>");
             InfectCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Infect Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "感染冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             PestKillCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Pestilence Kill Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "万疫之神击杀冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             PestVent =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Pestilence Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "万疫之神可以使用管道", false);
 
             TheGlitch =
-                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF00FF>The Glitch</color>");
-            MimicCooldownOption = new CustomNumberOption(num++, MultiMenu.neutral, "Mimic Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            MimicDurationOption = new CustomNumberOption(num++, MultiMenu.neutral, "Mimic Duration", 10f, 1f, 15f, 1f, CooldownFormat);
-            HackCooldownOption = new CustomNumberOption(num++, MultiMenu.neutral, "Hack Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
-            HackDurationOption = new CustomNumberOption(num++, MultiMenu.neutral, "Hack Duration", 10f, 1f, 15f, 1f, CooldownFormat);
+                new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF00FF>混沌</color>");
+            MimicCooldownOption = new CustomNumberOption(num++, MultiMenu.neutral, "化形冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            MimicDurationOption = new CustomNumberOption(num++, MultiMenu.neutral, "化形持续时间", 10f, 1f, 15f, 1f, CooldownFormat);
+            HackCooldownOption = new CustomNumberOption(num++, MultiMenu.neutral, "骇入冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            HackDurationOption = new CustomNumberOption(num++, MultiMenu.neutral, "骇入持续时间", 10f, 1f, 15f, 1f, CooldownFormat);
             GlitchKillCooldownOption =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Glitch Kill Cooldown", 25f, 10f, 120f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "混沌击杀冷却", 25f, 10f, 120f, 2.5f, CooldownFormat);
             GlitchHackDistanceOption =
-                new CustomStringOption(num++, MultiMenu.neutral, "Glitch Hack Distance", new[] { "Short", "Normal", "Long" });
+                new CustomStringOption(num++, MultiMenu.neutral, "混沌骇入距离", new[] { "短", "中", "长" });
             GlitchVent =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Glitch Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "混沌可以使用管道", false);
 
-            Vampire = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#262626FF>Vampire</color>");
+            Vampire = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#262626FF>吸血鬼</color>");
             BiteCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Vampire Bite Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "吸血鬼吸血冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             VampImpVision =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vampires Have Impostor Vision", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "吸血鬼内鬼视野", false);
             VampVent =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Vampires Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "吸血鬼可以使用管道", false);
             NewVampCanAssassin =
-                new CustomToggleOption(num++, MultiMenu.neutral, "New Vampire Can Assassinate", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "新吸血鬼可以刺杀", false);
             MaxVampiresPerGame =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Maximum Vampires Per Game", 2, 2, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.neutral, "每场游戏的最大吸血鬼数量", 2, 2, 5, 1);
             CanBiteNeutralBenign =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Can Convert Neutral Benign Roles", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "可以转换中立善良类职业", false);
             CanBiteNeutralEvil =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Can Convert Neutral Evil Roles", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "可以转换中立邪恶类职业", false);
 
-            Werewolf = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#A86629FF>Werewolf</color>");
+            Werewolf = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#A86629FF>月下狼人</color>");
             RampageCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Rampage Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "狂暴冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             RampageDuration =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Rampage Duration", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "狂暴持续时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             RampageKillCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Rampage Kill Cooldown", 10f, 0.5f, 15f, 0.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "狂暴击杀冷却", 10f, 0.5f, 15f, 0.5f, CooldownFormat);
             WerewolfVent =
-                new CustomToggleOption(num++, MultiMenu.neutral, "Werewolf Can Vent When Rampaged", false);
+                new CustomToggleOption(num++, MultiMenu.neutral, "月下狼人可以在狂暴的时候使用管道", false);
 
             Escapist =
-                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Escapist</color>");
+                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>逃脱者</color>");
             EscapeCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Recall Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "逃脱冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             EscapistVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Escapist Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "逃脱者可以使用管道", false);
 
             Grenadier =
-                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Grenadier</color>");
+                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>掷弹兵</color>");
             GrenadeCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Flash Grenade Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "闪光冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             GrenadeDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Flash Grenade Duration", 10f, 5f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "闪光持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
             FlashRadius =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Flash Radius", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "闪光半径", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
             GrenadierIndicators =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Indicate Flashed Crewmates", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "闪光的船员进行标记", false);
             GrenadierVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Grenadier Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "掷弹兵可以使用管道", false);
 
             Morphling =
-                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Morphling</color>");
+                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>化形者</color>");
             MorphlingCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Morphling Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "化形冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             MorphlingDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Morphling Duration", 10f, 5f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "化形持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
             MorphlingVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Morphling Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "化形者可以使用管道", false);
 
-            Swooper = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Swooper</color>");
+            Swooper = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>隐身人</color>");
             SwoopCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Swoop Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "隐身冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             SwoopDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Swoop Duration", 10f, 5f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "隐身持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
             SwooperVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Swooper Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "隐身人可以使用管道", false);
 
-            Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Venerer</color>");
+            Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>猎人</color>");
             AbilityCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Ability Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "技能冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             AbilityDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Ability Duration", 10f, 5f, 15f, 1f, CooldownFormat);
-            SprintSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "Sprint Speed", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
-            FreezeSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "Freeze Speed", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "技能持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
+            SprintSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "冲刺阶段的速度", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
+            FreezeSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "冻结阶段的速度", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
 
             Bomber =
-                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Bomber</color>");
+                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>爆破手</color>");
             DetonateDelay =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Detonate Delay", 5f, 1f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "爆破延迟", 5f, 1f, 15f, 1f, CooldownFormat);
             MaxKillsInDetonation =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Max Kills In Detonation", 5, 1, 15, 1);
+                new CustomNumberOption(num++, MultiMenu.imposter, "爆破中最多能炸死", 5, 1, 15, 1);
             DetonateRadius =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Detonate Radius", 0.25f, 0.05f, 1f, 0.05f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "爆破半径", 0.25f, 0.05f, 1f, 0.05f, MultiplierFormat);
             BomberVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Bomber Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "爆破手可以进入管道", false);
 
-            Traitor = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Traitor</color>");
-            LatestSpawn = new CustomNumberOption(num++, MultiMenu.imposter, "Minimum People Alive When Traitor Can Spawn", 5, 3, 15, 1);
+            Traitor = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>背叛者</color>");
+            LatestSpawn = new CustomNumberOption(num++, MultiMenu.imposter, "背叛者可以出现,时活着的人至少", 5, 3, 15, 1);
             NeutralKillingStopsTraitor =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Traitor Won't Spawn If Any Neutral Killing Is Alive", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "背叛者不会在任何中立击杀类活着的时候生成", false);
 
-            Warlock = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Warlock</color>");
+            Warlock = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>术士</color>");
             ChargeUpDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Time It Takes To Fully Charge", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "充满要的时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             ChargeUseDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Time It Takes To Use Full Charge", 1f, 0.05f, 5f, 0.05f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "使用充满所需的时间", 1f, 0.05f, 5f, 0.05f, CooldownFormat);
 
-            Blackmailer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Blackmailer</color>");
+            Blackmailer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>勒索者</color>");
             BlackmailCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Initial Blackmail Cooldown", 10f, 1f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "勒索冷却", 10f, 1f, 15f, 1f, CooldownFormat);
 
-            Miner = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Miner</color>");
+            Miner = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>管道工</color>");
             MineCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Mine Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "挖洞冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
 
-            Undertaker = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>Undertaker</color>");
-            DragCooldown = new CustomNumberOption(num++, MultiMenu.imposter, "Drag Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+            Undertaker = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>送葬者</color>");
+            DragCooldown = new CustomNumberOption(num++, MultiMenu.imposter, "拖动冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             UndertakerDragSpeed =
-                new CustomNumberOption(num++, MultiMenu.imposter, "Undertaker Drag Speed", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "送葬者拖动尸体的速度", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
             UndertakerVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Undertaker Can Vent", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "送葬者可以进入管道", false);
             UndertakerVentWithBody =
-                new CustomToggleOption(num++, MultiMenu.imposter, "Undertaker Can Vent While Dragging", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "送葬者可以带着尸体进入管道", false);
 
-            Bait = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#00B3B3FF>Bait</color>");
-            BaitMinDelay = new CustomNumberOption(num++, MultiMenu.modifiers, "Minimum Delay for the Bait Report", 0f, 0f, 15f, 0.5f, CooldownFormat);
-            BaitMaxDelay = new CustomNumberOption(num++, MultiMenu.modifiers, "Maximum Delay for the Bait Report", 1f, 0f, 15f, 0.5f, CooldownFormat);
+            Bait = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#00B3B3FF>诱饵</color>");
+            BaitMinDelay = new CustomNumberOption(num++, MultiMenu.modifiers, "击杀诱饵最小报告延迟", 0f, 0f, 15f, 0.5f, CooldownFormat);
+            BaitMaxDelay = new CustomNumberOption(num++, MultiMenu.modifiers, "击杀诱饵最大报告延迟", 1f, 0f, 15f, 0.5f, CooldownFormat);
 
-            Diseased = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#808080FF>Diseased</color>");
-            DiseasedKillMultiplier = new CustomNumberOption(num++, MultiMenu.modifiers, "Diseased Kill Multiplier", 3f, 1.5f, 5f, 0.5f, MultiplierFormat);
+            Diseased = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#808080FF>病人</color>");
+            DiseasedKillMultiplier = new CustomNumberOption(num++, MultiMenu.modifiers, "击杀病人的凶手CD翻倍", 3f, 1.5f, 5f, 0.5f, MultiplierFormat);
 
-            Frosty = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#99FFFFFF>Frosty</color>");
-            ChillDuration = new CustomNumberOption(num++, MultiMenu.modifiers, "Chill Duration", 10f, 1f, 15f, 1f, CooldownFormat);
-            ChillStartSpeed = new CustomNumberOption(num++, MultiMenu.modifiers, "Chill Start Speed", 0.75f, 0.25f, 0.95f, 0.05f, MultiplierFormat);
+            Frosty = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#99FFFFFF>圣诞老人</color>");
+            ChillDuration = new CustomNumberOption(num++, MultiMenu.modifiers, "冷冻持续时间", 10f, 1f, 15f, 1f, CooldownFormat);
+            ChillStartSpeed = new CustomNumberOption(num++, MultiMenu.modifiers, "冷冻时速度", 0.75f, 0.25f, 0.95f, 0.05f, MultiplierFormat);
 
-            Flash = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF8080FF>Flash</color>");
-            FlashSpeed = new CustomNumberOption(num++, MultiMenu.modifiers, "Flash Speed", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
+            Flash = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF8080FF>闪电侠</color>");
+            FlashSpeed = new CustomNumberOption(num++, MultiMenu.modifiers, "闪电一般的速度", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
 
-            Giant = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FFB34DFF>Giant</color>");
-            GiantSlow = new CustomNumberOption(num++, MultiMenu.modifiers, "Giant Speed", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
+            Giant = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FFB34DFF>巨人</color>");
+            GiantSlow = new CustomNumberOption(num++, MultiMenu.modifiers, "巨人速度", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
 
             Lovers =
                 new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF66CCFF>恋人</color>");
             BothLoversDie = new CustomToggleOption(num++, MultiMenu.modifiers, "同生共死");
             LovingImpPercent = new CustomNumberOption(num++, MultiMenu.modifiers, "恋爱内鬼概率", 20f, 0f, 100f, 10f,
                 PercentFormat);
-            NeutralLovers = new CustomToggleOption(num++, MultiMenu.modifiers, "中立可恋爱");
+            NeutralLovers = new CustomToggleOption(num++, MultiMenu.modifiers, "中立可成为恋人");
 
             Underdog = new CustomHeaderOption(num++, MultiMenu.modifiers, "<color=#FF0000FF>失败者</color>");
             UnderdogKillBonus = new CustomNumberOption(num++, MultiMenu.modifiers, "奖励击杀冷却", 5f, 2.5f, 10f, 2.5f, CooldownFormat);
