@@ -191,7 +191,7 @@ namespace TownOfUs {
                 HttpClient http = new HttpClient();
                 http.DefaultRequestHeaders.Add("User-Agent", "TownOfUs Updater");
                 var response = await http.GetAsync(new System.Uri(githubURI), HttpCompletionOption.ResponseContentRead);
-                
+
                 if (response.StatusCode != HttpStatusCode.OK || response.Content == null) {
                     PluginSingleton<TownOfUs>.Instance.Log.LogMessage("Server returned no data: " + response.StatusCode.ToString());
                     return false;
