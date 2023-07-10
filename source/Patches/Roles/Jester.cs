@@ -10,7 +10,7 @@ namespace TownOfUs.Roles
 
         public Jester(PlayerControl player) : base(player)
         {
-            Name = "Jester";
+            Name = "小丑";
             ImpostorText = () => "Get Voted Out";
             TaskText = () => SpawnedAs ? "Get voted out!\nFake Tasks:" : "Your target was killed. Now you get voted out!\nFake Tasks:";
             Color = Patches.Colors.Jester;

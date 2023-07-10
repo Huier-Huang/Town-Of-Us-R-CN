@@ -1042,9 +1042,9 @@ namespace TownOfUs.CustomOption
                 new CustomNumberOption(num++, MultiMenu.neutral, "Maximum Number Of Protects", 5, 1, 15, 1);
             ShowProtect =
                 new CustomStringOption(num++, MultiMenu.neutral, "Show Protected Player",
-                    new[] { "Self", "Guardian Angel", "Self+GA", "Everyone" });
+                    new[] { "Self", "守护天使", "Self+GA", "Everyone" });
             GaOnTargetDeath = new CustomStringOption(num++, MultiMenu.neutral, "GA Becomes On Target Dead",
-                new[] { "Crew", "Amnesiac", "Survivor", "Jester" });
+                new[] { "Crew", "失忆者", "幸存者", "小丑" });
             GATargetKnows =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Target Knows GA Exists", false);
             GAKnowsTargetRole =
@@ -1076,7 +1076,7 @@ namespace TownOfUs.CustomOption
             Executioner =
                 new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#8C4005FF>Executioner</color>");
             OnTargetDead = new CustomStringOption(num++, MultiMenu.neutral, "Executioner Becomes On Target Dead",
-                new[] { "Crew", "Amnesiac", "Survivor", "Jester" });
+                new[] { "Crew", "失忆者", "幸存者", "小丑" });
             ExecutionerButton =
                 new CustomToggleOption(num++, MultiMenu.neutral, "Executioner Can Button", true);
 

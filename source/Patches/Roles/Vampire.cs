@@ -9,7 +9,7 @@ namespace TownOfUs.Roles
     {
         public Vampire(PlayerControl player) : base(player)
         {
-            Name = "Vampire";
+            Name = "吸血鬼";
             ImpostorText = () => "Convert Crewmates And Kill The Rest";
             TaskText = () => "Bite all other players\nFake Tasks:";
             Color = Patches.Colors.Vampire;

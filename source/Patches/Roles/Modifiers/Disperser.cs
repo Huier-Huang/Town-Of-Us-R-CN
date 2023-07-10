@@ -18,8 +18,8 @@ namespace TownOfUs.Roles.Modifiers
         public DateTime StartingCooldown { get; set; }
         public Disperser(PlayerControl player) : base(player)
         {
-            Name = "Disperser";
-            TaskText = () => "Separate the Crew";
+            Name = "散布者";
+            TaskText = () => "让他们分散开来";
             Color = Patches.Colors.Impostor;
             StartingCooldown = DateTime.UtcNow;
             ModifierType = ModifierEnum.Disperser;

@@ -9,7 +9,7 @@ namespace TownOfUs.Roles
     {
         public Juggernaut(PlayerControl owner) : base(owner)
         {
-            Name = "Juggernaut";
+            Name = "剑圣";
             Color = Patches.Colors.Juggernaut;
             LastKill = DateTime.UtcNow;
             RoleType = RoleEnum.Juggernaut;

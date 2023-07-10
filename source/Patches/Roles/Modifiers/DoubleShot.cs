@@ -5,8 +5,8 @@ namespace TownOfUs.Roles.Modifiers
         public bool LifeUsed;
         public DoubleShot(PlayerControl player) : base(player)
         {
-            Name = "Double Shot";
-            TaskText = () => "You have an extra life when assassinating";
+            Name = "专业刺客";
+            TaskText = () => "你有两次机会来刺杀他";
             Color = Patches.Colors.Impostor;
             ModifierType = ModifierEnum.DoubleShot;
             LifeUsed = false;

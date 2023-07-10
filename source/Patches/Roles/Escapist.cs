@@ -13,7 +13,7 @@ namespace TownOfUs.Roles
 
         public Escapist(PlayerControl player) : base(player)
         {
-            Name = "Escapist";
+            Name = "逃逸者";
             ImpostorText = () => "Get Away From Kills With Ease";
             TaskText = () => "Teleport to get away from bodies";
             Color = Patches.Colors.Impostor;

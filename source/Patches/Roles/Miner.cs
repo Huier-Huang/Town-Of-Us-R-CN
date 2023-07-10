@@ -14,7 +14,7 @@ namespace TownOfUs.Roles
 
         public Miner(PlayerControl player) : base(player)
         {
-            Name = "Miner";
+            Name = "矿工";
             ImpostorText = () => "From The Top, Make It Drop, That's A Vent";
             TaskText = () => "Place vents around the map";
             Color = Patches.Colors.Impostor;

@@ -18,7 +18,7 @@ namespace TownOfUs.Roles
 
         public Morphling(PlayerControl player) : base(player)
         {
-            Name = "Morphling";
+            Name = "化形者";
             ImpostorText = () => "Transform Into Crewmates";
             TaskText = () => "Morph into crewmates to be disguised";
             Color = Patches.Colors.Impostor;

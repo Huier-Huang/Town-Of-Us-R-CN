@@ -15,7 +15,7 @@ namespace TownOfUs.Roles
         public bool Loaded { get; set; } = false;
         public Aurial(PlayerControl player) : base(player)
         {
-            Name = "Aurial";
+            Name = "修仙者";
             ImpostorText = () => "Radiate To See The Auras Of Other Players";
             TaskText = () => "Radiate to discover evildoers";
             Color = Patches.Colors.Aurial;

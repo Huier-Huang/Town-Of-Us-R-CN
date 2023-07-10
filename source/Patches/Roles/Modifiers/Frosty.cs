@@ -10,8 +10,8 @@ namespace TownOfUs.Roles.Modifiers
 
         public Frosty(PlayerControl player) : base(player)
         {
-            Name = "Frosty";
-            TaskText = () => "Leave behind an icy surprise";
+            Name = "圣诞老人";
+            TaskText = () => "在寒冷的冬天带来惊喜";
             Color = Patches.Colors.Frosty;
             ModifierType = ModifierEnum.Frosty;
         }

@@ -19,7 +19,7 @@ namespace TownOfUs.Roles
 
         public Werewolf(PlayerControl player) : base(player)
         {
-            Name = "Werewolf";
+            Name = "狼人";
             ImpostorText = () => "Rampage To Kill Everyone";
             TaskText = () => "Rampage to kill everyone\nFake Tasks:";
             Color = Patches.Colors.Werewolf;

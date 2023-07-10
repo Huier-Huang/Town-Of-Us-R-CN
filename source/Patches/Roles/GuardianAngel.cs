@@ -21,7 +21,7 @@ namespace TownOfUs.Roles
 
         public GuardianAngel(PlayerControl player) : base(player)
         {
-            Name = "Guardian Angel";
+            Name = "守护天使";
             ImpostorText = () =>
                 target == null ? "You don't have a target for some reason... weird..." : $"Protect {target.name} With Your Life!";
             TaskText = () =>

@@ -116,7 +116,7 @@ namespace TownOfUs.Patches {
                 }
                 else if (playerControl.Is(ModifierEnum.Aftermath))
                 {
-                    playerRole += " (<color=#" + Patches.Colors.Aftermath.ToHtmlStringRGBA() + ">击杀后果</color>)";
+                    playerRole += " (<color=#" + Patches.Colors.Aftermath.ToHtmlStringRGBA() + ">惹不起的人</color>)";
                 }
                 else if (playerControl.Is(ModifierEnum.Bait))
                 {
@@ -132,7 +132,7 @@ namespace TownOfUs.Patches {
                 }
                 else if (playerControl.Is(ModifierEnum.Tiebreaker))
                 {
-                    playerRole += " (<color=#" + Patches.Colors.Tiebreaker.ToHtmlStringRGBA() + ">破平者</color>)";
+                    playerRole += " (<color=#" + Patches.Colors.Tiebreaker.ToHtmlStringRGBA() + ">破局者</color>)";
                 }
                 else if (playerControl.Is(ModifierEnum.Torch))
                 {
@@ -160,7 +160,7 @@ namespace TownOfUs.Patches {
                 }
                 else if (playerControl.Is(ModifierEnum.DoubleShot))
                 {
-                    playerRole += " (<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">双枪手</color>)";
+                    playerRole += " (<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">专业吃客</color>)";
                 }
                 else if (playerControl.Is(ModifierEnum.Underdog))
                 {

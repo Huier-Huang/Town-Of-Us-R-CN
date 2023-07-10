@@ -9,7 +9,7 @@ namespace TownOfUs.Roles
 
         public Executioner(PlayerControl player) : base(player)
         {
-            Name = "Executioner";
+            Name = "处刑人";
             ImpostorText = () =>
                 target == null ? "You don't have a target for some reason... weird..." : $"Vote {target.name} Out";
             TaskText = () =>
