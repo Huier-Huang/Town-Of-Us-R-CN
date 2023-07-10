@@ -12,9 +12,9 @@ namespace TownOfUs.Roles
 
         public Phantom(PlayerControl player) : base(player)
         {
-            Name = "Phantom";
+            Name = "幽灵";
             ImpostorText = () => "";
-            TaskText = () => "Complete all your tasks without being caught!";
+            TaskText = () => "在不被抓到的情况下完成所有任务!";
             Color = Patches.Colors.Phantom;
             RoleType = RoleEnum.Phantom;
             AddToRoleHistory(RoleType);

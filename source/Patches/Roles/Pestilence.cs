@@ -9,13 +9,13 @@ namespace TownOfUs.Roles
     {
         public Pestilence(PlayerControl owner) : base(owner)
         {
-            Name = "Pestilence";
+            Name = "瘟疫之神";
             Color = Patches.Colors.Pestilence;
             LastKill = DateTime.UtcNow;
             RoleType = RoleEnum.Pestilence;
             AddToRoleHistory(RoleType);
             ImpostorText = () => "";
-            TaskText = () => "Kill everyone with your unstoppable abilities!\nFake Tasks:";
+            TaskText = () => "杀光所有人!\n假任务:";
             Faction = Faction.NeutralKilling;
         }
 

@@ -15,15 +15,15 @@ namespace TownOfUs.CrewmateRoles.TrapperMod
             var trapperRole = Role.GetRole<Trapper>(PlayerControl.LocalPlayer);
             if (trapperRole.trappedPlayers.Count == 0)
             {
-                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "No players entered any of your traps");
+                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "没有玩家进入你的陷阱");
             }
             else if (trapperRole.trappedPlayers.Count < CustomGameOptions.MinAmountOfPlayersInTrap)
             {
-                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Not enough players triggered your traps");
+                DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "没有足够的玩家触发你的陷阱");
             }
             else
             {
-                string message = "Roles caught in your trap:\n";
+                string message = "落入陷阱的职业:\n";
                 foreach (RoleEnum role in trapperRole.trappedPlayers.OrderBy(x => Guid.NewGuid()))
                 {
                     message += $" {role},";
