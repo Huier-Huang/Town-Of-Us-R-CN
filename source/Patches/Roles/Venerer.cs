@@ -15,8 +15,8 @@ namespace TownOfUs.Roles
         public Venerer(PlayerControl player) : base(player)
         {
             Name = "终末猎手";
-            ImpostorText = () => "With Each Kill Your Ability Becomes Stronger";
-            TaskText = () => "Kill players to unlock ability perks";
+            ImpostorText = () => "如何在末世下生寸下去?";
+            TaskText = () => "那当然是杀人升级获得技能啦!";
             Color = Patches.Colors.Impostor;
             LastCamouflaged = DateTime.UtcNow;
             RoleType = RoleEnum.Venerer;

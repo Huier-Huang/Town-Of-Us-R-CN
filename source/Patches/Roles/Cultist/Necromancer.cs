@@ -12,9 +12,9 @@ namespace TownOfUs.Roles.Cultist
 
         public Necromancer(PlayerControl player) : base(player)
         {
-            Name = "Necromancer";
-            ImpostorText = () => "Revive The Dead To Do Your Dirty Work";
-            TaskText = () => "Revive Crewmates to turn them into Impostors";
+            Name = "亡灵法师";
+            ImpostorText = () => "让死人复活来帮你干脏活";
+            TaskText = () => "把他们复活成为我们的伙伴";
             Color = Patches.Colors.Impostor;
             LastRevived = DateTime.UtcNow;
             RoleType = RoleEnum.Necromancer;

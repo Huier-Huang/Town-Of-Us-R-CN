@@ -35,8 +35,8 @@ namespace TownOfUs.Roles
         public Transporter(PlayerControl player) : base(player)
         {
             Name = "传送师";
-            ImpostorText = () => "Choose Two Players To Swap Locations";
-            TaskText = () => "Choose two players to swap locations";
+            ImpostorText = () => "诶嘿嘿稍微捣乱没事吧doge";
+            TaskText = () => "选择两名玩家交换位置";
             Color = Patches.Colors.Transporter;
             LastTransported = DateTime.UtcNow;
             RoleType = RoleEnum.Transporter;
@@ -130,7 +130,7 @@ namespace TownOfUs.Roles
                                 ((!player.Data.Disconnected && !player.Data.IsDead) ||
                                 Object.FindObjectsOfType<DeadBody>().Any(x => x.ParentId == player.PlayerId)))
                             {
-                                TransportList.AddChat(TempPlayer, "Click here");
+                                TransportList.AddChat(TempPlayer, "点这里");
                                 TransportList.chatBubPool.activeChildren[TransportList.chatBubPool.activeChildren._size - 1].Cast<ChatBubble>().SetName(player.Data.PlayerName, false, false,
                                     PlayerControl.LocalPlayer.PlayerId == player.PlayerId ? Color : Color.white);
                                 var IsDeadTemp = player.Data.IsDead;

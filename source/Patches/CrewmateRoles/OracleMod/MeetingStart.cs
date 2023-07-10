@@ -23,13 +23,13 @@ namespace TownOfUs.CrewmateRoles.OracleMod
 
         public static string PlayerReportFeedback(PlayerControl player)
         {
-            if (player.Data.IsDead || player.Data.Disconnected) return "Your confessor failed to survive so you received no confession";
+            if (player.Data.IsDead || player.Data.Disconnected) return "你没能活下去, 看来你还没有忏悔";
             var allPlayers = PlayerControl.AllPlayerControls.ToArray().Where(x => !x.Data.IsDead && !x.Data.Disconnected && x != PlayerControl.LocalPlayer && x != player).ToList();
-            if (allPlayers.Count < 2) return "Too few people alive to receive a confessional";
+            if (allPlayers.Count < 2) return "活着的人太少，无法接受忏悔";
             var evilPlayers = PlayerControl.AllPlayerControls.ToArray().Where(x => !x.Data.IsDead && !x.Data.Disconnected &&
             (x.Is(Faction.Impostors) || (x.Is(Faction.NeutralKilling) && CustomGameOptions.NeutralKillingShowsEvil) ||
             (x.Is(Faction.NeutralEvil) && CustomGameOptions.NeutralEvilShowsEvil) || (x.Is(Faction.NeutralBenign) && CustomGameOptions.NeutralBenignShowsEvil))).ToList();
-            if (evilPlayers.Count == 0) return $"{player.GetDefaultOutfit().PlayerName} confesses to knowing that there are no more evil players!"; 
+            if (evilPlayers.Count == 0) return $"{player.GetDefaultOutfit().PlayerName} 他承认已经没有坏人"; 
             allPlayers.Shuffle();
             evilPlayers.Shuffle();
             var secondPlayer = allPlayers[0];
@@ -41,12 +41,12 @@ namespace TownOfUs.CrewmateRoles.OracleMod
             if (firstTwoEvil)
             {
                 var thirdPlayer = allPlayers[1];
-                return $"{player.GetDefaultOutfit().PlayerName} confesses to knowing that they, {secondPlayer.GetDefaultOutfit().PlayerName} and/or {thirdPlayer.GetDefaultOutfit().PlayerName} is evil!";
+                return $"{player.GetDefaultOutfit().PlayerName} 承认知道他们, {secondPlayer.GetDefaultOutfit().PlayerName} 和/或者 {thirdPlayer.GetDefaultOutfit().PlayerName} 是坏人!";
             }
             else
             {
                 var thirdPlayer = evilPlayers[0];
-                return $"{player.GetDefaultOutfit().PlayerName} confesses to knowing that they, {secondPlayer.GetDefaultOutfit().PlayerName} and/or {thirdPlayer.GetDefaultOutfit().PlayerName} is evil!";
+                return $"{player.GetDefaultOutfit().PlayerName} 承认知道他们, {secondPlayer.GetDefaultOutfit().PlayerName} 和/或者 {thirdPlayer.GetDefaultOutfit().PlayerName} 是坏人!";
             }
         }
     }

@@ -21,8 +21,8 @@ namespace TownOfUs.Roles
         public Vigilante(PlayerControl player) : base(player)
         {
             Name = "侠客";
-            ImpostorText = () => "Kill Impostors If You Can Guess Their Roles";
-            TaskText = () => "Guess the roles of impostors mid-meeting to kill them!";
+            ImpostorText = () => "猜测坏人身份";
+            TaskText = () => "朋友这是一场见义勇为的豪赌!(青雀.jpg)";
             Color = Patches.Colors.Vigilante;
             RoleType = RoleEnum.Vigilante;
             AddToRoleHistory(RoleType);
@@ -31,7 +31,7 @@ namespace TownOfUs.Roles
 
             if (CustomGameOptions.GameMode == GameMode.Classic || CustomGameOptions.GameMode == GameMode.AllAny)
             {
-                ColorMapping.Add("Impostor", Colors.Impostor);
+                ColorMapping.Add("内鬼", Colors.Impostor);
                 if (CustomGameOptions.JanitorOn > 0) ColorMapping.Add("清洁工", Colors.Impostor);
                 if (CustomGameOptions.MorphlingOn > 0) ColorMapping.Add("化形者", Colors.Impostor);
                 if (CustomGameOptions.MinerOn > 0) ColorMapping.Add("矿工", Colors.Impostor);
@@ -83,23 +83,23 @@ namespace TownOfUs.Roles
                     if (CustomGameOptions.AddArsonist) ColorMapping.Add("纵火犯", Colors.Arsonist);
                     if (CustomGameOptions.AddPlaguebearer) ColorMapping.Add("瘟疫之源", Colors.Plaguebearer);
                     ColorMapping.Add("混沌", Colors.Glitch);
-                    ColorMapping.Add("狼人", Colors.Werewolf);
+                    ColorMapping.Add("月下狼人", Colors.Werewolf);
                     if (CustomGameOptions.HiddenRoles) ColorMapping.Add("剑圣", Colors.Juggernaut);
                 }
             }
             else
             {
-                ColorMapping.Add("Necromancer", Colors.Impostor);
-                ColorMapping.Add("Whisperer", Colors.Impostor);
+                ColorMapping.Add("死灵法师", Colors.Impostor);
+                ColorMapping.Add("窃语者", Colors.Impostor);
                 if (CustomGameOptions.MaxChameleons > 0) ColorMapping.Add("隐身人", Colors.Impostor);
-                if (CustomGameOptions.MaxEngineers > 0) ColorMapping.Add("Demolitionist", Colors.Impostor);
-                if (CustomGameOptions.MaxInvestigators > 0) ColorMapping.Add("Consigliere", Colors.Impostor);
-                if (CustomGameOptions.MaxMystics > 0) ColorMapping.Add("Clairvoyant", Colors.Impostor);
-                if (CustomGameOptions.MaxSnitches > 0) ColorMapping.Add("Informant", Colors.Impostor);
-                if (CustomGameOptions.MaxSpies > 0) ColorMapping.Add("Rogue Agent", Colors.Impostor);
+                if (CustomGameOptions.MaxEngineers > 0) ColorMapping.Add("破坏者", Colors.Impostor);
+                if (CustomGameOptions.MaxInvestigators > 0) ColorMapping.Add("参谋", Colors.Impostor);
+                if (CustomGameOptions.MaxMystics > 0) ColorMapping.Add("先觉者", Colors.Impostor);
+                if (CustomGameOptions.MaxSnitches > 0) ColorMapping.Add("远见之人", Colors.Impostor);
+                if (CustomGameOptions.MaxSpies > 0) ColorMapping.Add("流氓", Colors.Impostor);
                 if (CustomGameOptions.MaxTransporters > 0) ColorMapping.Add("逃逸者", Colors.Impostor);
-                if (CustomGameOptions.MaxVigilantes > 1) ColorMapping.Add("Assassin", Colors.Impostor);
-                ColorMapping.Add("Impostor", Colors.Impostor);
+                if (CustomGameOptions.MaxVigilantes > 1) ColorMapping.Add("刺客", Colors.Impostor);
+                ColorMapping.Add("内鬼", Colors.Impostor);
             }
 
             SortedColorMapping = ColorMapping.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);

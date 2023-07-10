@@ -10,8 +10,8 @@ namespace TownOfUs.Roles
         public Vampire(PlayerControl player) : base(player)
         {
             Name = "吸血鬼";
-            ImpostorText = () => "Convert Crewmates And Kill The Rest";
-            TaskText = () => "Bite all other players\nFake Tasks:";
+            ImpostorText = () => "我要把他们统统变成吸血鬼";
+            TaskText = () => "咬所有其他玩家\n假任务:";
             Color = Patches.Colors.Vampire;
             LastBit = DateTime.UtcNow;
             RoleType = RoleEnum.Vampire;
