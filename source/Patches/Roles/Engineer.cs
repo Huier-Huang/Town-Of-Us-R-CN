@@ -6,7 +6,7 @@ namespace TownOfUs.Roles
     {
         public Engineer(PlayerControl player) : base(player)
         {
-            Name = "Engineer";
+            Name = "工程师";
             ImpostorText = () => "Maintain Important Systems On The Ship";
             TaskText = () => CustomGameOptions.GameMode == GameMode.Cultist ? "Vent around" : "Vent around and fix sabotages";
             Color = Patches.Colors.Engineer;

@@ -7,7 +7,7 @@ namespace TownOfUs.Roles
     {
         public Warlock(PlayerControl player) : base(player)
         {
-            Name = "Warlock";
+            Name = "术士";
             ImpostorText = () => "Charge Up Your Kill Button To Multi Kill";
             TaskText = () => "Kill people in small bursts";
             Color = Patches.Colors.Impostor;

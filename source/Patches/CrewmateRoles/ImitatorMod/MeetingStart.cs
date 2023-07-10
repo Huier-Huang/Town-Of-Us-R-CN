@@ -18,15 +18,15 @@ namespace TownOfUs.CrewmateRoles.ImitatorMod
             {
                 if (imitatorRole.trappedPlayers.Count == 0)
                 {
-                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "No players entered any of your traps");
+                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "没有玩家触发陷阱");
                 }
                 else if (imitatorRole.trappedPlayers.Count < CustomGameOptions.MinAmountOfPlayersInTrap)
                 {
-                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "Not enough players triggered your traps");
+                    DestroyableSingleton<HudManager>.Instance.Chat.AddChat(PlayerControl.LocalPlayer, "没有足够的玩家触发陷阱");
                 }
                 else
                 {
-                    string message = "Roles caught in your trap:\n";
+                    string message = "陷阱侦测到职业:\n";
                     foreach (RoleEnum role in imitatorRole.trappedPlayers.OrderBy(x => Guid.NewGuid()))
                     {
                         message += $" {role},";

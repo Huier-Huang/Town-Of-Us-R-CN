@@ -19,7 +19,7 @@ namespace TownOfUs.Roles
     {
         public Crewmate(PlayerControl player) : base(player)
         {
-            Name = "Crewmate";
+            Name = "船员";
             Hidden = true;
             Faction = Faction.Crewmates;
             RoleType = RoleEnum.Crewmate;

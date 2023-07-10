@@ -23,7 +23,7 @@ namespace TownOfUs.Roles
 
         public Bomber(PlayerControl player) : base(player)
         {
-            Name = "Bomber";
+            Name = "爆破手";
             ImpostorText = () => "Plant Bombs To Kill Multiple Crewmates At Once";
             TaskText = () => "Plant bombs to kill crewmates";
             Color = Palette.ImpostorRed;

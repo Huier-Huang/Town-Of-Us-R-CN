@@ -775,7 +775,7 @@ namespace TownOfUs
             if (player.Is(RoleEnum.Engineer))
             {
                 var engineer = Role.GetRole<Engineer>(player);
-                engineer.Name = "Demolitionist";
+                engineer.Name = "破坏者";
                 engineer.Color = Patches.Colors.Impostor;
                 engineer.Faction = Faction.Impostors;
                 engineer.RegenTask();
@@ -784,7 +784,7 @@ namespace TownOfUs
             if (player.Is(RoleEnum.Investigator))
             {
                 var investigator = Role.GetRole<Investigator>(player);
-                investigator.Name = "Consigliere";
+                investigator.Name = "参谋";
                 investigator.Color = Patches.Colors.Impostor;
                 investigator.Faction = Faction.Impostors;
                 investigator.RegenTask();
@@ -793,7 +793,7 @@ namespace TownOfUs
             if (player.Is(RoleEnum.CultistMystic))
             {
                 var mystic = Role.GetRole<CultistMystic>(player);
-                mystic.Name = "Clairvoyant";
+                mystic.Name = "先觉者";
                 mystic.Color = Patches.Colors.Impostor;
                 mystic.Faction = Faction.Impostors;
                 mystic.RegenTask();
@@ -802,8 +802,8 @@ namespace TownOfUs
             if (player.Is(RoleEnum.CultistSnitch))
             {
                 var snitch = Role.GetRole<CultistSnitch>(player);
-                snitch.Name = "Informant";
-                snitch.TaskText = () => "Complete all your tasks to reveal a fake Impostor!";
+                snitch.Name = "远见之人";
+                snitch.TaskText = () => "完成所有任务知道你的内鬼队友";
                 snitch.Color = Patches.Colors.Impostor;
                 snitch.Faction = Faction.Impostors;
                 snitch.RegenTask();
@@ -822,7 +822,7 @@ namespace TownOfUs
             if (player.Is(RoleEnum.Spy))
             {
                 var spy = Role.GetRole<Spy>(player);
-                spy.Name = "Rogue Agent";
+                spy.Name = "流氓";
                 spy.Color = Patches.Colors.Impostor;
                 spy.Faction = Faction.Impostors;
                 spy.RegenTask();
@@ -839,25 +839,25 @@ namespace TownOfUs
             if (player.Is(RoleEnum.Vigilante))
             {
                 var vigi = Role.GetRole<Vigilante>(player);
-                vigi.Name = "Assassin";
-                vigi.TaskText = () => "Guess the roles of crewmates mid-meeting to kill them!";
+                vigi.Name = "刺客";
+                vigi.TaskText = () => "他们的身份是!!";
                 vigi.Color = Patches.Colors.Impostor;
                 vigi.Faction = Faction.Impostors;
                 vigi.RegenTask();
                 var colorMapping = new Dictionary<string, Color>();
-                if (CustomGameOptions.MayorCultistOn > 0) colorMapping.Add("Mayor", Colors.Mayor);
-                if (CustomGameOptions.SeerCultistOn > 0) colorMapping.Add("Seer", Colors.Seer);
-                if (CustomGameOptions.SheriffCultistOn > 0) colorMapping.Add("Sheriff", Colors.Sheriff);
+                if (CustomGameOptions.MayorCultistOn > 0) colorMapping.Add("市长", Colors.Mayor);
+                if (CustomGameOptions.SeerCultistOn > 0) colorMapping.Add("预言家", Colors.Seer);
+                if (CustomGameOptions.SheriffCultistOn > 0) colorMapping.Add("警长", Colors.Sheriff);
                 if (CustomGameOptions.SurvivorCultistOn > 0) colorMapping.Add("幸存者", Colors.Survivor);
-                if (CustomGameOptions.MaxChameleons > 0) colorMapping.Add("Chameleon", Colors.Chameleon);
-                if (CustomGameOptions.MaxEngineers > 0) colorMapping.Add("Engineer", Colors.Engineer);
-                if (CustomGameOptions.MaxInvestigators > 0) colorMapping.Add("Investigator", Colors.Investigator);
-                if (CustomGameOptions.MaxMystics > 0) colorMapping.Add("Mystic", Colors.Mystic);
-                if (CustomGameOptions.MaxSnitches > 0) colorMapping.Add("Snitch", Colors.Snitch);
-                if (CustomGameOptions.MaxSpies > 0) colorMapping.Add("Spy", Colors.Spy);
-                if (CustomGameOptions.MaxTransporters > 0) colorMapping.Add("Transporter", Colors.Transporter);
-                if (CustomGameOptions.MaxVigilantes > 1) colorMapping.Add("Vigilante", Colors.Vigilante);
-                colorMapping.Add("Crewmate", Colors.Crewmate);
+                if (CustomGameOptions.MaxChameleons > 0) colorMapping.Add("变色龙", Colors.Chameleon);
+                if (CustomGameOptions.MaxEngineers > 0) colorMapping.Add("工程师", Colors.Engineer);
+                if (CustomGameOptions.MaxInvestigators > 0) colorMapping.Add("调查员", Colors.Investigator);
+                if (CustomGameOptions.MaxMystics > 0) colorMapping.Add("招魂师", Colors.Mystic);
+                if (CustomGameOptions.MaxSnitches > 0) colorMapping.Add("告密者", Colors.Snitch);
+                if (CustomGameOptions.MaxSpies > 0) colorMapping.Add("间谍", Colors.Spy);
+                if (CustomGameOptions.MaxTransporters > 0) colorMapping.Add("传送师", Colors.Transporter);
+                if (CustomGameOptions.MaxVigilantes > 1) colorMapping.Add("侠客", Colors.Vigilante);
+                colorMapping.Add("船员", Colors.Crewmate);
                 vigi.SortedColorMapping = colorMapping.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
             }
 

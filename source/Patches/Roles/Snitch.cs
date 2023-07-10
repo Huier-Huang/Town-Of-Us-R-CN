@@ -13,7 +13,7 @@ namespace TownOfUs.Roles
 
         public Snitch(PlayerControl player) : base(player)
         {
-            Name = "Snitch";
+            Name = "告密者";
             ImpostorText = () => "Complete All Your Tasks To Discover The Impostors";
             TaskText = () =>
                 TasksDone

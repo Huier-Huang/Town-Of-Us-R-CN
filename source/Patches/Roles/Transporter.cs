@@ -34,7 +34,7 @@ namespace TownOfUs.Roles
         
         public Transporter(PlayerControl player) : base(player)
         {
-            Name = "Transporter";
+            Name = "传送师";
             ImpostorText = () => "Choose Two Players To Swap Locations";
             TaskText = () => "Choose two players to swap locations";
             Color = Patches.Colors.Transporter;

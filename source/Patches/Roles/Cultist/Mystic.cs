@@ -4,7 +4,7 @@ namespace TownOfUs.Roles.Cultist
     {
         public CultistMystic(PlayerControl player) : base(player)
         {
-            Name = "Mystic";
+            Name = "招魂师";
             ImpostorText = () => "Understand When Someone Gets Converted";
             TaskText = () => "Know when someone gets converted";
             Color = Patches.Colors.Mystic;

@@ -4,7 +4,7 @@ namespace TownOfUs.Roles
     {
         public Spy(PlayerControl player) : base(player)
         {
-            Name = "Spy";
+            Name = "间谍";
             ImpostorText = () => "Snoop Around And Find Stuff Out";
             TaskText = () => "Gain extra information on the Admin Table";
             Color = Patches.Colors.Spy;

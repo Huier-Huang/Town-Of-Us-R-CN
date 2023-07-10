@@ -6,7 +6,7 @@ namespace TownOfUs.Roles
     {
         public Mayor(PlayerControl player) : base(player)
         {
-            Name = "Mayor";
+            Name = "市长";
             ImpostorText = () => "Reveal Yourself To Save The Town";
             TaskText = () => "Reveal yourself when the time is right";
             Color = Patches.Colors.Mayor;

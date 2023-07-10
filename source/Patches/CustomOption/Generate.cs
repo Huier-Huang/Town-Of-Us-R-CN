@@ -885,7 +885,7 @@ namespace TownOfUs.CustomOption
             Spy =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>Spy</color>");
             WhoSeesDead = new CustomStringOption(num++, MultiMenu.crewmate, "Who Sees Dead Bodies On Admin",
-                new[] { "Nobody", "Spy", "Everyone But Spy", "Everyone" });
+                new[] { "Nobody", "间谍", "Everyone But Spy", "Everyone" });
 
             Tracker =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#009900FF>Tracker</color>");
@@ -945,7 +945,7 @@ namespace TownOfUs.CustomOption
             CanStakeRoundOne = new CustomToggleOption(num++, MultiMenu.crewmate, "Can Stake Round One", false);
             SelfKillAfterFinalStake = new CustomToggleOption(num++, MultiMenu.crewmate, "Self Kill On Failure To Kill A Vamp With All Stakes", false);
             BecomeOnVampDeaths =
-                new CustomStringOption(num++, MultiMenu.crewmate, "What Vampire Hunter Becomes On All Vampire Deaths", new[] { "Crewmate", "Sheriff", "Veteran", "Vigilante" });
+                new CustomStringOption(num++, MultiMenu.crewmate, "What Vampire Hunter Becomes On All Vampire Deaths", new[] { "船员", "警长", "Veteran", "侠客" });
 
             Veteran =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#998040FF>Veteran</color>");

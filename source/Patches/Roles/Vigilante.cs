@@ -20,7 +20,7 @@ namespace TownOfUs.Roles
 
         public Vigilante(PlayerControl player) : base(player)
         {
-            Name = "Vigilante";
+            Name = "侠客";
             ImpostorText = () => "Kill Impostors If You Can Guess Their Roles";
             TaskText = () => "Guess the roles of impostors mid-meeting to kill them!";
             Color = Patches.Colors.Vigilante;
@@ -39,11 +39,11 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.UndertakerOn > 0) ColorMapping.Add("送葬者", Colors.Impostor);
                 if (CustomGameOptions.EscapistOn > 0) ColorMapping.Add("逃逸者", Colors.Impostor);
                 if (CustomGameOptions.GrenadierOn > 0) ColorMapping.Add("掷弹兵", Colors.Impostor);
-                if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("Traitor", Colors.Impostor);
-                if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("Blackmailer", Colors.Impostor);
-                if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("Bomber", Colors.Impostor);
-                if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("Warlock", Colors.Impostor);
-                if (CustomGameOptions.VenererOn > 0) ColorMapping.Add("Venerer", Colors.Impostor);
+                if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("叛徒", Colors.Impostor);
+                if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("勒索者", Colors.Impostor);
+                if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("爆破手", Colors.Impostor);
+                if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("术士", Colors.Impostor);
+                if (CustomGameOptions.VenererOn > 0) ColorMapping.Add("终末猎手", Colors.Impostor);
 
                 if (CustomGameOptions.VigilanteGuessNeutralBenign)
                 {
@@ -66,7 +66,7 @@ namespace TownOfUs.Roles
                     if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("狼人", Colors.Werewolf);
                     if (CustomGameOptions.HiddenRoles) ColorMapping.Add("剑圣", Colors.Juggernaut);
                 }
-                if (CustomGameOptions.VigilanteGuessLovers && CustomGameOptions.LoversOn > 0) ColorMapping.Add("Lover", Colors.Lovers);
+                if (CustomGameOptions.VigilanteGuessLovers && CustomGameOptions.LoversOn > 0) ColorMapping.Add("恋人", Colors.Lovers);
             }
             else if (CustomGameOptions.GameMode == GameMode.KillingOnly)
             {
@@ -75,7 +75,7 @@ namespace TownOfUs.Roles
                 ColorMapping.Add("隐身人", Colors.Impostor);
                 ColorMapping.Add("送葬者", Colors.Impostor);
                 ColorMapping.Add("掷弹兵", Colors.Impostor);
-                ColorMapping.Add("Traitor", Colors.Impostor);
+                ColorMapping.Add("叛徒", Colors.Impostor);
                 ColorMapping.Add("逃逸者", Colors.Impostor);
 
                 if (CustomGameOptions.VigilanteGuessNeutralKilling)
