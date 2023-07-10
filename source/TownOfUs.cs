@@ -219,12 +219,16 @@ namespace TownOfUs
             var server = regionInfos.FindAll(n => n.Name== "梦服上海(新)" || n.Name == "梦服上海（新）" || n.PingServer == "au-sh.pafyx.top" || n.PingServer == "http://au-sh-pafyx.top");
             if(server == null)
             {
-                ServerManager._instance.AddOrUpdateRegion(createHttp("au-sh.pafyx.top", "梦服上海(新)", 22000));
+                ServerManager._instance.AddOrUpdateRegion(createHttp("au-sh.pafyx.top", "梦服上海(新)", 22000, false));
+            }
+            if(!regionInfos.Contains(createHttp("server.among-us.top", "cmd香港服务器", 443, true)))
+            {
+                ServerManager._instance.AddOrUpdateRegion(createHttp("server.among-us.top", "cmd香港服务器", 443, true));
             }
 
-            static IRegionInfo createHttp(string ip, string name, ushort port)
+            static IRegionInfo createHttp(string ip, string name, ushort port, bool ishttps)
             {
-                var serverIp = "http://" + ip;
+                var serverIp = ishttps ? "https://" : "http://" + ip;
                 var serverInfo = new ServerInfo(name, serverIp, port, false);
                 ServerInfo[] ServerInfo = { serverInfo };
                 return new StaticHttpRegionInfo(name, StringNames.NoTranslation, ip, ServerInfo).Cast<IRegionInfo>();
