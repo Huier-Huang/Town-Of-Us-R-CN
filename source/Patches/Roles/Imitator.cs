@@ -16,7 +16,7 @@ namespace TownOfUs.Roles
 
         public Imitator(PlayerControl player) : base(player)
         {
-            Name = "效颦模仿者";
+            Name = "效颦者";
             ImpostorText = () => "使用真心实意的死者来造福船员";
             TaskText = () => "使用死亡角色使船员受益";
             Color = Patches.Colors.Imitator;

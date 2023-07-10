@@ -543,7 +543,7 @@ namespace TownOfUs.CustomOption
             CrewSupportRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "支援型船员");
             EngineerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#FFA60AFF>工程师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            ImitatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B3D94DFF>调查员</color>", 0f, 0f, 100f, 10f,
+            ImitatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B3D94DFF>效颦者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             MayorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#704FA8FF>市长</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);

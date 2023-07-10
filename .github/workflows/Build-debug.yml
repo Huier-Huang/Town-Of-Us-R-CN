@@ -1,0 +1,57 @@
+name: Build-debug
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.nuget/packages
+            ~/.cache/bepinex
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.x
+
+      - name: build
+        run: dotnet build TownOfUs.csproj
+
+      - name: install wget
+        run: sudo apt install wget
+
+      - name: download BepInEx
+        run: wget https://builds.bepinex.dev/projects/bepinex_be/670/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.670%2B42a6727.zip
+
+      - name: BepInEx
+        run: unzip BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.670+42a6727.zip -d ./TownOfUs-R-CN/
+
+      - name: download reactor
+        run: wget https://github.com/NuclearPowered/Reactor/releases/download/2.1.0/Reactor.dll -d ./TownOfUs-R-CN/
+
+      - name: unzip reactor
+        run: unzip Reactor.dll.zip -d ./TownOfUs-R-CN/BepInEx/plugins/
+
+      - name: path
+        run: sudo chmod -R 777 ./TownOfUs-R-CN/
+
+      - name: move
+        run: mv bin/Debug/net6.0/TownOfUs.dll ./TownOfUs-R-CN/BepInEx/plugins/
+
+      - name: upload TownOfUs-R-CN
+        uses: actions/upload-artifact@v3
+        with:
+          name: TownOfUs-R-CN
+          path: ./TownOfUs-R-CN
