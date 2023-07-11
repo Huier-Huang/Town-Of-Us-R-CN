@@ -60,7 +60,7 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
             var nameText = Object.Instantiate(voteArea.NameText, voteArea.transform);
             voteArea.NameText.transform.localPosition = new Vector3(0.55f, 0.12f, -0.1f);
             nameText.transform.localPosition = new Vector3(0.55f, -0.12f, -0.1f);
-            nameText.text = "猜测";
+            nameText.text = "无";
 
             var cycleBack = Object.Instantiate(confirmButton, voteArea.transform);
             var cycleRendererBack = cycleBack.GetComponent<SpriteRenderer>();
@@ -136,7 +136,7 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
                 var newGuess = role.Guesses[voteArea.TargetPlayerId] = role.PossibleGuesses[guessIndex];
 
                 nameText.text = newGuess == "None"
-                    ? "猜测"
+                    ? "无"
                     : $"<color=#{role.SortedColorMapping[newGuess].ToHtmlStringRGBA()}>{newGuess}</color>";
             }
 
@@ -153,15 +153,16 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
                 ) return;
                 var targetId = voteArea.TargetPlayerId;
                 var currentGuess = role.Guesses[targetId];
+                var currentGuessColor = role.SortedColorMapping[currentGuess];
                 if (currentGuess == "None") return;
 
                 var playerRole = Role.GetRole(voteArea);
                 var playerModifier = Modifier.GetModifier(voteArea);
 
-                var toDie = playerRole.Name == currentGuess ? playerRole.Player : role.Player;
+                var toDie = (playerRole.Color == currentGuessColor || playerRole.Name == currentGuess) ? playerRole.Player : role.Player;
                 if (playerModifier != null)
-                    toDie = (playerRole.Name == currentGuess || playerModifier.Name == currentGuess) ? playerRole.Player : role.Player;
-                
+                    toDie = (playerModifier.Color == currentGuessColor || playerModifier.Name == currentGuess) ? playerModifier.Player : role.Player;
+
                 if (toDie.Is(RoleEnum.Necromancer) || toDie.Is(RoleEnum.Whisperer))
                 {
                     foreach (var player in PlayerControl.AllPlayerControls)
