@@ -146,7 +146,9 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
                 var playerRole = Role.GetRole(voteArea);
                 var playerModifier = Modifier.GetModifier(voteArea);
 
-                var toDie = playerRole.Name == currentGuess ? playerRole.Player : role.Player;
+                var toDie = role.Player;
+
+                if (playerRole.RoleType == role.GetRoleEnum(currentGuess)) toDie = playerRole.Player;
 
                 if (toDie == playerRole.Player)
                 {

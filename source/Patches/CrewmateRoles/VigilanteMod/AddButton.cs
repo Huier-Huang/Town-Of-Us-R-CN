@@ -157,10 +157,13 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
 
                 var playerRole = Role.GetRole(voteArea);
                 var playerModifier = Modifier.GetModifier(voteArea);
+                var playerAbility = Ability.GetAbility(voteArea);
 
-                var toDie = playerRole.Name == currentGuess ? playerRole.Player : role.Player;
-                if (playerModifier != null)
-                    toDie = (playerModifier.Name == currentGuess || playerRole.Name == currentGuess) ? playerModifier.Player : role.Player;
+                var toDie = role.Player;
+
+                if (playerRole.RoleType == role.GetRoleEnum(currentGuess)) toDie = playerRole.Player;
+                if (playerModifier != null && playerModifier.ModifierType == role.GetModifierEnum(currentGuess)) toDie = playerModifier.Player;
+                if (playerAbility != null && playerAbility.AbilityType == role.GetAbilityEnum(currentGuess)) toDie = playerModifier.Player;
 
                 if (toDie.Is(RoleEnum.Necromancer) || toDie.Is(RoleEnum.Whisperer))
                 {

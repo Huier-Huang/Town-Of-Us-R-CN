@@ -168,9 +168,10 @@ namespace TownOfUs.Modifiers.AssassinMod
                 var playerRole = Role.GetRole(voteArea);
                 var playerModifier = Modifier.GetModifier(voteArea);
 
-                var toDie = playerRole.Name == currentGuess ? playerRole.Player : role.Player;
-                if (playerModifier != null)
-                    toDie = (playerModifier.Name == currentGuess || playerRole.Name == currentGuess) ? playerModifier.Player : role.Player;
+                var toDie = role.Player;
+
+                if (playerRole.RoleType == role.GetRoleEnum(currentGuess)) toDie = playerRole.Player;
+                if (playerModifier != null && playerModifier.ModifierType == role.GetModifierEnum(currentGuess)) toDie = playerModifier.Player;
 
                 if (!toDie.Is(RoleEnum.Pestilence) || PlayerControl.LocalPlayer.Is(RoleEnum.Pestilence))
                 {
