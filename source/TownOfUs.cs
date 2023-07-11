@@ -216,8 +216,12 @@ namespace TownOfUs
                 catch { }
             }));
 
+            serverManager.AvailableRegions = new List<IRegionInfo>().ToArray();
             serverManager.AddOrUpdateRegion(createHttp("au-sh.pafyx.top", "梦服上海(新)", 22000, false));
             serverManager.AddOrUpdateRegion(createHttp("server.among-us.top", "cmd香港服务器", 443, true));
+            serverManager.AddOrUpdateRegion(createHttp("au-eu.duikbo.at","Modded EU(MEU)", 443, true));
+            serverManager.AddOrUpdateRegion(createHttp("au-as.duikbo.at", "Modded Asia (MAS)", 443, true));
+            serverManager.AddOrUpdateRegion(createHttp("www.aumods.xyz", "Modded NA (MNA)", 443, true));
 
             static IRegionInfo createHttp(string ip, string name, ushort port, bool ishttps)
             {
