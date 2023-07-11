@@ -44,11 +44,17 @@ jobs:
       - name: path
         run: sudo chmod -R 777 ./TownOfUs-R-CN/
 
-      - name: mover reactor
+      - name: move reactor
         run: mv ./Reactor.dll ./TownOfUs-R-CN/BepInEx/plugins/
 
       - name: move dll
         run: mv source/bin/Debug/net6.0/TownOfUs.dll ./TownOfUs-R-CN/BepInEx/plugins/
+
+      - name: Upload dll
+        uses: actions/upload-artifact@v3
+        with:
+          name: TownOfUs.dll
+          path: ./TownOfUs-R-CN/BepInEx/plugins/TownOfUs.dll
 
       - name: upload TownOfUs-R-CN
         uses: actions/upload-artifact@v3

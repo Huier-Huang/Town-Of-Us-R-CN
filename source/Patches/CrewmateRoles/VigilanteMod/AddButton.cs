@@ -153,15 +153,14 @@ namespace TownOfUs.CrewmateRoles.VigilanteMod
                 ) return;
                 var targetId = voteArea.TargetPlayerId;
                 var currentGuess = role.Guesses[targetId];
-                var currentGuessColor = role.SortedColorMapping[currentGuess];
                 if (currentGuess == "None") return;
 
                 var playerRole = Role.GetRole(voteArea);
                 var playerModifier = Modifier.GetModifier(voteArea);
 
-                var toDie = (playerRole.Color == currentGuessColor || playerRole.Name == currentGuess) ? playerRole.Player : role.Player;
+                var toDie = playerRole.Name == currentGuess ? playerRole.Player : role.Player;
                 if (playerModifier != null)
-                    toDie = (playerModifier.Color == currentGuessColor || playerModifier.Name == currentGuess) ? playerModifier.Player : role.Player;
+                    toDie = (playerModifier.Name == currentGuess || playerRole.Name == currentGuess) ? playerModifier.Player : role.Player;
 
                 if (toDie.Is(RoleEnum.Necromancer) || toDie.Is(RoleEnum.Whisperer))
                 {

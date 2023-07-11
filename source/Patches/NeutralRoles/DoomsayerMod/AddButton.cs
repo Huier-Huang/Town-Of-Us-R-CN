@@ -141,13 +141,12 @@ namespace TownOfUs.NeutralRoles.DoomsayerMod
                 ) return;
                 var targetId = voteArea.TargetPlayerId;
                 var currentGuess = role.Guesses[targetId];
-                var currentGuessColor = role.SortedColorMapping[currentGuess];
                 if (currentGuess == "None") return;
 
                 var playerRole = Role.GetRole(voteArea);
                 var playerModifier = Modifier.GetModifier(voteArea);
 
-                var toDie = (playerRole.Color == currentGuessColor || playerRole.Name == currentGuess) ? playerRole.Player : role.Player;
+                var toDie = playerRole.Name == currentGuess ? playerRole.Player : role.Player;
 
                 if (toDie == playerRole.Player)
                 {

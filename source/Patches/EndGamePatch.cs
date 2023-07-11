@@ -160,7 +160,7 @@ namespace TownOfUs.Patches {
                 }
                 else if (playerControl.Is(ModifierEnum.DoubleShot))
                 {
-                    playerRole += " (<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">专业吃客</color>)";
+                    playerRole += " (<color=#" + Patches.Colors.Impostor.ToHtmlStringRGBA() + ">专业刺客</color>)";
                 }
                 else if (playerControl.Is(ModifierEnum.Underdog))
                 {

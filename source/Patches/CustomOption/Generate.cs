@@ -596,7 +596,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             SwooperOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>隐形人</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            VenererOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>猎人</color>", 0f, 0f, 100f, 10f,
+            VenererOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>终末猎手</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             ImpostorKillingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "击杀型内鬼");
@@ -945,7 +945,7 @@ namespace TownOfUs.CustomOption
             CanStakeRoundOne = new CustomToggleOption(num++, MultiMenu.crewmate, "第一轮能打赌", false);
             SelfKillAfterFinalStake = new CustomToggleOption(num++, MultiMenu.crewmate, "用所有木桩杀死一个吸血鬼失败而自杀", false);
             BecomeOnVampDeaths =
-                new CustomStringOption(num++, MultiMenu.crewmate, "吸血鬼猎人在所有吸血鬼死亡事件中扮演的角色", new[] { "船员", "警长", "老兵", "侠客" });
+                new CustomStringOption(num++, MultiMenu.crewmate, "吸血鬼杀手在所有吸血鬼死亡事件中扮演的角色", new[] { "船员", "警长", "老兵", "侠客" });
 
             Veteran =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#998040FF>老兵</color>");

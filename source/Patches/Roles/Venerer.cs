@@ -15,7 +15,7 @@ namespace TownOfUs.Roles
         public Venerer(PlayerControl player) : base(player)
         {
             Name = "终末猎手";
-            ImpostorText = () => "如何在末世下生寸下去?";
+            ImpostorText = () => "如何在末世下生存下去?";
             TaskText = () => "那当然是杀人升级获得技能啦!";
             Color = Patches.Colors.Impostor;
             LastCamouflaged = DateTime.UtcNow;
