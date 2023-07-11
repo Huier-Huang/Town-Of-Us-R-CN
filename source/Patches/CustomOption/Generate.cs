@@ -509,7 +509,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             InvestigatorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#00B3B3FF>调查员</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MysticOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>招魂师</color>", 0f, 0f, 100f, 10f,
+            MysticOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>灵媒</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             OracleOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#BF00BFFF>神之使徒</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -517,7 +517,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             SnitchOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#D4AF37FF>告密者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            SpyOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>间谍</color>", 0f, 0f, 100f, 10f,
+            SpyOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>特工</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             TrackerOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#009900FF>追踪者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -537,7 +537,7 @@ namespace TownOfUs.CustomOption
             CrewProtectiveRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "保护型船员");
             AltruistOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#660000FF>殉道者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MedicOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#006600FF>医生</color>", 0f, 0f, 100f, 10f,
+            MedicOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#006600FF>法医</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
 
             CrewSupportRoles = new CustomHeaderOption(num++, MultiMenu.crewmate, "支援型船员");
@@ -547,7 +547,7 @@ namespace TownOfUs.CustomOption
                 PercentFormat);
             MayorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#704FA8FF>市长</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            MediumOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>灵媒</color>", 0f, 0f, 100f, 10f,
+            MediumOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>招魂师</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             ProsecutorOn = new CustomNumberOption(num++, MultiMenu.crewmate, "<color=#B38000FF>检察官</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -602,7 +602,7 @@ namespace TownOfUs.CustomOption
             ImpostorKillingRoles = new CustomHeaderOption(num++, MultiMenu.imposter, "击杀型内鬼");
             BomberOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>爆破手</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
-            TraitorOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>叛徒</color>", 0f, 0f, 100f, 10f,
+            TraitorOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>背叛者</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             WarlockOn = new CustomNumberOption(num++, MultiMenu.imposter, "<color=#FF0000FF>术士</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
@@ -708,11 +708,11 @@ namespace TownOfUs.CustomOption
             MaxInvestigators =
                 new CustomNumberOption(num++, MultiMenu.main, "最大调查员职业数", 3, 0, 5, 1);
             MaxMystics =
-                new CustomNumberOption(num++, MultiMenu.main, "最大招魂师职业数", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大灵媒职业数", 3, 0, 5, 1);
             MaxSnitches =
                 new CustomNumberOption(num++, MultiMenu.main, "最大告密者职业数", 3, 0, 5, 1);
             MaxSpies =
-                new CustomNumberOption(num++, MultiMenu.main, "最大间谍职业数", 3, 0, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.main, "最大特工职业数", 3, 0, 5, 1);
             MaxTransporters =
                 new CustomNumberOption(num++, MultiMenu.main, "最大传送师职业数", 3, 0, 5, 1);
             MaxVigilantes =
@@ -741,32 +741,32 @@ namespace TownOfUs.CustomOption
             RandomMapAirship = new CustomNumberOption(num++, MultiMenu.main, "启用Airship", 0f, 0f, 100f, 10f, PercentFormat);
             RandomMapSubmerged = new CustomNumberOption(num++, MultiMenu.main, "启用Submerged", 0f, 0f, 100f, 10f, PercentFormat);
             AutoAdjustSettings = new CustomToggleOption(num++, MultiMenu.main, "自动调整设置", false);
-            SmallMapHalfVision = new CustomToggleOption(num++, MultiMenu.main, "Half Vision On Skeld/Mira HQ", false);
+            SmallMapHalfVision = new CustomToggleOption(num++, MultiMenu.main, "关于Skeld/Mira总部的半视角", false);
             SmallMapDecreasedCooldown =
-                new CustomNumberOption(num++, MultiMenu.main, "Mira HQ Decreased Cooldowns", 0f, 0f, 15f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.main, "Mira总部冷却时间减少", 0f, 0f, 15f, 2.5f, CooldownFormat);
             LargeMapIncreasedCooldown =
-                new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged Increased Cooldowns", 0f, 0f, 15f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged增加冷却时间", 0f, 0f, 15f, 2.5f, CooldownFormat);
             SmallMapIncreasedShortTasks =
-                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira HQ Increased Short Tasks", 0, 0, 5, 1);
+                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira HQ增加短任务", 0, 0, 5, 1);
             SmallMapIncreasedLongTasks =
-                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira HQ Increased Long Tasks", 0, 0, 3, 1);
+                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira HQ增加长任务", 0, 0, 3, 1);
             LargeMapDecreasedShortTasks =
-                 new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged Decreased Short Tasks", 0, 0, 5, 1);
+                 new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged减少短任务", 0, 0, 5, 1);
             LargeMapDecreasedLongTasks =
-                 new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged Decreased Long Tasks", 0, 0, 3, 1);
+                 new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged减少长任务", 0, 0, 3, 1);
 
             BetterPolusSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "Better Polus Settings");
-            VentImprovements = new CustomToggleOption(num++, MultiMenu.main, "Better Polus Vent Layout", false);
-            VitalsLab = new CustomToggleOption(num++, MultiMenu.main, "Vitals Moved To Lab", false);
-            ColdTempDeathValley = new CustomToggleOption(num++, MultiMenu.main, "Cold Temp Moved To Death Valley", false);
+                new CustomHeaderOption(num++, MultiMenu.main, "Better Polus设置");
+            VentImprovements = new CustomToggleOption(num++, MultiMenu.main, "Better Polus通风口布局更改", false);
+            VitalsLab = new CustomToggleOption(num++, MultiMenu.main, "生命体征移至实验室", false);
+            ColdTempDeathValley = new CustomToggleOption(num++, MultiMenu.main, "温度计移至死亡谷", false);
             WifiChartCourseSwap =
-                new CustomToggleOption(num++, MultiMenu.main, "Reboot Wifi And Chart Course Swapped", false);
+                new CustomToggleOption(num++, MultiMenu.main, "重新启动Wifi并交换航向图", false);
 
             CustomGameSettings =
-                new CustomHeaderOption(num++, MultiMenu.main, "自定义游戏社长");
+                new CustomHeaderOption(num++, MultiMenu.main, "自定义游戏设置");
             ColourblindComms = new CustomToggleOption(num++, MultiMenu.main, "伪装的审稿", false);
-            ImpostorSeeRoles = new CustomToggleOption(num++, MultiMenu.main, "内鬼可见队身份", false);
+            ImpostorSeeRoles = new CustomToggleOption(num++, MultiMenu.main, "内鬼可见队友身份", false);
             DeadSeeRoles =
                 new CustomToggleOption(num++, MultiMenu.main, "幽灵可见角色和投票", false);
             InitialCooldowns =
@@ -774,7 +774,7 @@ namespace TownOfUs.CustomOption
             ParallelMedScans = new CustomToggleOption(num++, MultiMenu.main, "可多人扫描", false);
             SkipButtonDisable = new CustomStringOption(num++, MultiMenu.main, "会议不可跳过", new[] { "无", "破坏情况", "总是" });
             HiddenRoles = new CustomToggleOption(num++, MultiMenu.main, "启用隐藏角色", true);
-            FirstDeathShield = new CustomToggleOption(num++, MultiMenu.main, "下一局是第一个死亡盾", false);
+            FirstDeathShield = new CustomToggleOption(num++, MultiMenu.main, "首刀保护", false);
 
             TaskTrackingSettings =
                 new CustomHeaderOption(num++, MultiMenu.main, "任务设置");
@@ -787,9 +787,9 @@ namespace TownOfUs.CustomOption
             NumberOfNeutralAssassins = new CustomNumberOption(num++, MultiMenu.imposter, "中立刺客数量", 1, 0, 5, 1);
             AmneTurnImpAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "失忆者变成内鬼获得能力", false);
             AmneTurnNeutAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "失忆者变成击杀型中立获得能力", false);
-            TraitorCanAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "叛徒获得能力", false);
+            TraitorCanAssassin = new CustomToggleOption(num++, MultiMenu.imposter, "背叛者获得能力", false);
             AssassinKills = new CustomNumberOption(num++, MultiMenu.imposter, "猜测次数", 1, 1, 15, 1);
-            AssassinMultiKill = new CustomToggleOption(num++, MultiMenu.imposter, "刺客每次会议可以杀死不止一次", false);
+            AssassinMultiKill = new CustomToggleOption(num++, MultiMenu.imposter, "刺客每次会议可以多次猜测", false);
             AssassinCrewmateGuess = new CustomToggleOption(num++, MultiMenu.imposter, "刺客能猜出船员", false);
             AssassinGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.imposter, "刺客可以猜测善良中立", false);
             AssassinGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.imposter, "刺客可以猜测邪恶中立", false);
@@ -843,7 +843,7 @@ namespace TownOfUs.CustomOption
             VentFootprintVisible = new CustomToggleOption(num++, MultiMenu.crewmate, "通风口可见脚印", false);
 
             Mystic =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>招魂师</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D99E6FF>灵媒</color>");
             MysticArrowDuration =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "尸体箭头持续时间", 0.1f, 0f, 1f, 0.05f, CooldownFormat);
 
@@ -880,12 +880,12 @@ namespace TownOfUs.CustomOption
             SnitchTasksRemaining =
                  new CustomNumberOption(num++, MultiMenu.crewmate, "提示时剩余任务", 1, 1, 5, 1);
             SnitchSeesImpInMeeting = new CustomToggleOption(num++, MultiMenu.crewmate, "告密可在会议上得知", true);
-            SnitchSeesTraitor = new CustomToggleOption(num++, MultiMenu.crewmate, "告密可得知叛徒", true);
+            SnitchSeesTraitor = new CustomToggleOption(num++, MultiMenu.crewmate, "告密可得知背叛者", true);
 
             Spy =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>间谍</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#CCA3CCFF>特工</color>");
             WhoSeesDead = new CustomStringOption(num++, MultiMenu.crewmate, "谁能在管理面板看见尸体",
-                new[] { "没有人", "间谍", "除了间谍", "所有人" });
+                new[] { "没有人", "特工", "除了特工", "所有人" });
 
             Tracker =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#009900FF>追踪者</color>");
@@ -935,7 +935,7 @@ namespace TownOfUs.CustomOption
                 new CustomToggleOption(num++, MultiMenu.crewmate, "警长能击杀月下狼人", false);
             SheriffKillCd =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "警长击杀冷却时间", 25f, 10f, 40f, 2.5f, CooldownFormat);
-            SheriffBodyReport = new CustomToggleOption(num++, MultiMenu.crewmate, "警长可以报告击杀者");
+            SheriffBodyReport = new CustomToggleOption(num++, MultiMenu.crewmate, "警长可以报告击杀目标");
 
             VampireHunter =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B3B3E6FF>吸血鬼杀手</color>");
@@ -962,26 +962,26 @@ namespace TownOfUs.CustomOption
             VigilanteMultiKill = new CustomToggleOption(num++, MultiMenu.crewmate, "侠客可多次猜测", false);
             VigilanteGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测善良型中立", false);
             VigilanteGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测邪恶型中立", false);
-            VigilanteGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测击杀型中里", false);
+            VigilanteGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测击杀型中立", false);
             VigilanteGuessLovers = new CustomToggleOption(num++, MultiMenu.crewmate, "可猜测恋人", false);
             VigilanteAfterVoting = new CustomToggleOption(num++, MultiMenu.crewmate, "可在投票后猜测", false);
 
-            Altruist = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#660000FF>殉道</color>");
+            Altruist = new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#660000FF>殉道者</color>");
             ReviveDuration =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "殉道复活所需时间", 10f, 1f, 15f, 1f, CooldownFormat);
             AltruistTargetBody =
                 new CustomToggleOption(num++, MultiMenu.crewmate, "目标的身体在复活开始时消失", false);
 
             Medic =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#006600FF>医生</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#006600FF>法医</color>");
             ShowShielded =
                 new CustomStringOption(num++, MultiMenu.crewmate, "可见护盾玩家",
-                    new[] { "被保护者", "医生", "被保护者和医生", "所有人" });
+                    new[] { "被保护者", "法医", "被保护者和法医", "所有人" });
             WhoGetsNotification =
-                new CustomStringOption(num++, MultiMenu.crewmate, "谁可察觉到尝试击杀",
-                    new[] { "医生", "被保护者", "所有人", "没有人" });
-            ShieldBreaks = new CustomToggleOption(num++, MultiMenu.crewmate, "尝试击杀时盾牌破裂", false);
-            MedicReportSwitch = new CustomToggleOption(num++, MultiMenu.crewmate, "显示医疗报告");
+                new CustomStringOption(num++, MultiMenu.crewmate, "可察觉到尝试击杀被保护者的人",
+                    new[] { "法医", "被保护者", "所有人", "没有人" });
+            ShieldBreaks = new CustomToggleOption(num++, MultiMenu.crewmate, "尝试击杀后盾牌消失", false);
+            MedicReportSwitch = new CustomToggleOption(num++, MultiMenu.crewmate, "显示尸检报告");
             MedicReportNameDuration =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "多少时间内能获取名称", 0f, 0f, 60f, 2.5f,
                     CooldownFormat);
@@ -995,7 +995,7 @@ namespace TownOfUs.CustomOption
                 new CustomNumberOption(num++, MultiMenu.crewmate, "最大修复次数", 5, 1, 15, 1);
 
             Medium =
-                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>灵媒</color>");
+                new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#A680FFFF>招魂师</color>");
             MediateCooldown =
                 new CustomNumberOption(num++, MultiMenu.crewmate, "通灵冷却", 10f, 1f, 15f, 1f, CooldownFormat);
             ShowMediatePlayer =
@@ -1065,7 +1065,7 @@ namespace TownOfUs.CustomOption
 
             Doomsayer = new CustomHeaderOption(num++, MultiMenu.neutral, "<color=#00FF80FF>末日告示者</color>");
             ObserveCooldown =
-                new CustomNumberOption(num++, MultiMenu.neutral, "Observe Cooldown", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.neutral, "技能冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             DoomsayerGuessNeutralBenign = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测善良中立", false);
             DoomsayerGuessNeutralEvil = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测邪恶中立", false);
             DoomsayerGuessNeutralKilling = new CustomToggleOption(num++, MultiMenu.neutral, "可以猜测击杀型中立", false);
@@ -1159,11 +1159,11 @@ namespace TownOfUs.CustomOption
                 new CustomToggleOption(num++, MultiMenu.neutral, "月下狼人可以在狂暴的时候使用管道", false);
 
             Escapist =
-                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>逃脱者</color>");
+                new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>逃逸者</color>");
             EscapeCooldown =
-                new CustomNumberOption(num++, MultiMenu.imposter, "逃脱冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "逃逸冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
             EscapistVent =
-                new CustomToggleOption(num++, MultiMenu.imposter, "逃脱者可以使用管道", false);
+                new CustomToggleOption(num++, MultiMenu.imposter, "可以使用管道", false);
 
             Grenadier =
                 new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>掷弹兵</color>");
@@ -1195,13 +1195,13 @@ namespace TownOfUs.CustomOption
             SwooperVent =
                 new CustomToggleOption(num++, MultiMenu.imposter, "隐身人可以使用管道", false);
 
-            Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>猎人</color>");
+            Venerer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>终末猎手</color>");
             AbilityCooldown =
                 new CustomNumberOption(num++, MultiMenu.imposter, "技能冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             AbilityDuration =
                 new CustomNumberOption(num++, MultiMenu.imposter, "技能持续时间", 10f, 5f, 15f, 1f, CooldownFormat);
-            SprintSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "冲刺阶段的速度", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
-            FreezeSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "冻结阶段的速度", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
+            SprintSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "获得加速的速度", 1.25f, 1.05f, 2.5f, 0.05f, MultiplierFormat);
+            FreezeSpeed = new CustomNumberOption(num++, MultiMenu.imposter, "其他人被冰冻的速度", 0.75f, 0.25f, 1f, 0.05f, MultiplierFormat);
 
             Bomber =
                 new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>爆破手</color>");

@@ -39,7 +39,7 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.UndertakerOn > 0) ColorMapping.Add("送葬者", Colors.Impostor);
                 if (CustomGameOptions.EscapistOn > 0) ColorMapping.Add("逃逸者", Colors.Impostor);
                 if (CustomGameOptions.GrenadierOn > 0) ColorMapping.Add("掷弹兵", Colors.Impostor);
-                if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("叛徒", Colors.Impostor);
+                if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("背叛者", Colors.Impostor);
                 if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("勒索者", Colors.Impostor);
                 if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("爆破手", Colors.Impostor);
                 if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("术士", Colors.Impostor);
@@ -75,7 +75,7 @@ namespace TownOfUs.Roles
                 ColorMapping.Add("隐身人", Colors.Impostor);
                 ColorMapping.Add("送葬者", Colors.Impostor);
                 ColorMapping.Add("掷弹兵", Colors.Impostor);
-                ColorMapping.Add("叛徒", Colors.Impostor);
+                ColorMapping.Add("背叛者", Colors.Impostor);
                 ColorMapping.Add("逃逸者", Colors.Impostor);
 
                 if (CustomGameOptions.VigilanteGuessNeutralKilling)
@@ -90,7 +90,7 @@ namespace TownOfUs.Roles
             else
             {
                 ColorMapping.Add("死灵法师", Colors.Impostor);
-                ColorMapping.Add("窃语者", Colors.Impostor);
+                ColorMapping.Add("耳语者", Colors.Impostor);
                 if (CustomGameOptions.MaxChameleons > 0) ColorMapping.Add("隐身人", Colors.Impostor);
                 if (CustomGameOptions.MaxEngineers > 0) ColorMapping.Add("破坏者", Colors.Impostor);
                 if (CustomGameOptions.MaxInvestigators > 0) ColorMapping.Add("参谋", Colors.Impostor);

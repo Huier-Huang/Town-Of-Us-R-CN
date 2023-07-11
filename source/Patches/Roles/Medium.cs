@@ -15,7 +15,7 @@ namespace TownOfUs.Roles
         
         public Medium(PlayerControl player) : base(player)
         {
-            Name = "灵媒";
+            Name = "招魂师";
             ImpostorText = () => "看!那是一只幽灵!";
             TaskText = () => "跟随鬼魂从他们那里得到线索";
             Color = Patches.Colors.Medium;

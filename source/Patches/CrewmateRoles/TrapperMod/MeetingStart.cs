@@ -26,7 +26,8 @@ namespace TownOfUs.CrewmateRoles.TrapperMod
                 string message = "落入陷阱的职业:\n";
                 foreach (RoleEnum role in trapperRole.trappedPlayers.OrderBy(x => Guid.NewGuid()))
                 {
-                    message += $" {role},";
+                    var RoleType = Role.GetRoles(role).FirstOrDefault();
+                    message += $" {RoleType.Name},";
                 }
                 message.Remove(message.Length - 1, 1);
                 if (DestroyableSingleton<HudManager>.Instance)

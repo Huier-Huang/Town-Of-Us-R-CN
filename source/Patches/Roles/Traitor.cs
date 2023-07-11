@@ -5,7 +5,7 @@ namespace TownOfUs.Roles
         public RoleEnum formerRole = new RoleEnum();
         public Traitor(PlayerControl player) : base(player)
         {
-            Name = "叛徒";
+            Name = "背叛者";
             ImpostorText = () => "";
             TaskText = () => "为装好身份不要被发现!";
             Color = Patches.Colors.Impostor;

@@ -852,9 +852,9 @@ namespace TownOfUs
                 if (CustomGameOptions.MaxChameleons > 0) colorMapping.Add("变色龙", Colors.Chameleon);
                 if (CustomGameOptions.MaxEngineers > 0) colorMapping.Add("工程师", Colors.Engineer);
                 if (CustomGameOptions.MaxInvestigators > 0) colorMapping.Add("调查员", Colors.Investigator);
-                if (CustomGameOptions.MaxMystics > 0) colorMapping.Add("招魂师", Colors.Mystic);
+                if (CustomGameOptions.MaxMystics > 0) colorMapping.Add("灵媒", Colors.Mystic);
                 if (CustomGameOptions.MaxSnitches > 0) colorMapping.Add("告密者", Colors.Snitch);
-                if (CustomGameOptions.MaxSpies > 0) colorMapping.Add("间谍", Colors.Spy);
+                if (CustomGameOptions.MaxSpies > 0) colorMapping.Add("特工", Colors.Spy);
                 if (CustomGameOptions.MaxTransporters > 0) colorMapping.Add("传送师", Colors.Transporter);
                 if (CustomGameOptions.MaxVigilantes > 1) colorMapping.Add("侠客", Colors.Vigilante);
                 colorMapping.Add("船员", Colors.Crewmate);

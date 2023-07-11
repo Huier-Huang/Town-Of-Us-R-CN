@@ -16,7 +16,7 @@ namespace TownOfUs.Roles.Cultist
 
         public Whisperer(PlayerControl player) : base(player)
         {
-            Name = "窃语者";
+            Name = "耳语者";
             ImpostorText = () => "喂!";
             TaskText = () => "说服船员接受你的想法";
             Color = Patches.Colors.Impostor;

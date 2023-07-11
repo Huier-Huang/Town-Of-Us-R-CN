@@ -42,9 +42,9 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.EngineerOn > 0) ColorMapping.Add("工程师", Colors.Engineer);
                 if (CustomGameOptions.SwapperOn > 0) ColorMapping.Add("换票师", Colors.Swapper);
                 if (CustomGameOptions.InvestigatorOn > 0) ColorMapping.Add("调查员", Colors.Investigator);
-                if (CustomGameOptions.MedicOn > 0) ColorMapping.Add("医生", Colors.Medic);
+                if (CustomGameOptions.MedicOn > 0) ColorMapping.Add("法医", Colors.Medic);
                 if (CustomGameOptions.SeerOn > 0) ColorMapping.Add("预言家", Colors.Seer);
-                if (CustomGameOptions.SpyOn > 0) ColorMapping.Add("间谍", Colors.Spy);
+                if (CustomGameOptions.SpyOn > 0) ColorMapping.Add("特工", Colors.Spy);
                 if (CustomGameOptions.SnitchOn > 0) ColorMapping.Add("告密者", Colors.Snitch);
                 if (CustomGameOptions.AltruistOn > 0) ColorMapping.Add("殉道者", Colors.Altruist);
                 if (CustomGameOptions.VigilanteOn > 0 || (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0 && CustomGameOptions.BecomeOnVampDeaths == BecomeEnum.Vigilante)) ColorMapping.Add("侠客", Colors.Vigilante);
@@ -52,10 +52,10 @@ namespace TownOfUs.Roles
                 if (CustomGameOptions.TrackerOn > 0) ColorMapping.Add("追踪者", Colors.Tracker);
                 if (CustomGameOptions.TrapperOn > 0) ColorMapping.Add("陷阱师", Colors.Trapper);
                 if (CustomGameOptions.TransporterOn > 0) ColorMapping.Add("传送师", Colors.Transporter);
-                if (CustomGameOptions.MediumOn > 0) ColorMapping.Add("灵媒", Colors.Medium);
-                if (CustomGameOptions.MysticOn > 0) ColorMapping.Add("招魂师", Colors.Mystic);
+                if (CustomGameOptions.MediumOn > 0) ColorMapping.Add("招魂师", Colors.Medium);
+                if (CustomGameOptions.MysticOn > 0) ColorMapping.Add("灵媒", Colors.Mystic);
                 if (CustomGameOptions.DetectiveOn > 0) ColorMapping.Add("侧写师", Colors.Detective);
-                if (CustomGameOptions.ImitatorOn > 0) ColorMapping.Add("效颦模仿者", Colors.Imitator);
+                if (CustomGameOptions.ImitatorOn > 0) ColorMapping.Add("效颦者", Colors.Imitator);
                 if (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("吸血鬼杀手", Colors.VampireHunter);
                 if (CustomGameOptions.ProsecutorOn > 0) ColorMapping.Add("监察管", Colors.Prosecutor);
                 if (CustomGameOptions.OracleOn > 0) ColorMapping.Add("神之使徒", Colors.Oracle);
@@ -71,7 +71,7 @@ namespace TownOfUs.Roles
                     if (CustomGameOptions.UndertakerOn > 0) ColorMapping.Add("送葬者", Colors.Impostor);
                     if (CustomGameOptions.EscapistOn > 0) ColorMapping.Add("逃逸者", Colors.Impostor);
                     if (CustomGameOptions.GrenadierOn > 0) ColorMapping.Add("掷弹兵", Colors.Impostor);
-                    if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("叛徒", Colors.Impostor);
+                    if (CustomGameOptions.TraitorOn > 0) ColorMapping.Add("背叛者", Colors.Impostor);
                     if (CustomGameOptions.BlackmailerOn > 0) ColorMapping.Add("勒索者", Colors.Impostor);
                     if (CustomGameOptions.BomberOn > 0) ColorMapping.Add("爆破手", Colors.Impostor);
                     if (CustomGameOptions.WarlockOn > 0) ColorMapping.Add("术士", Colors.Impostor);

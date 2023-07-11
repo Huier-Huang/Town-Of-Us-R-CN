@@ -9,7 +9,7 @@ namespace TownOfUs.Roles
         public Dictionary<byte, ArrowBehaviour> BodyArrows = new Dictionary<byte, ArrowBehaviour>();
         public Mystic(PlayerControl player) : base(player)
         {
-            Name = "招魂师";
+            Name = "灵媒";
             ImpostorText = () => "了解杀戮发生的时间和地点";
             TaskText = () => "知道何时何地发生杀戮";
             Color = Patches.Colors.Mystic;
