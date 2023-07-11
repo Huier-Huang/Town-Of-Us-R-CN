@@ -12,6 +12,7 @@ using Twitch;
 using Reactor.Utilities;
 using System.Text.Json.Serialization;
 using Rewired.ComponentControls;
+using System.Text.RegularExpressions;
 
 namespace TownOfUs {
     [HarmonyPatch(typeof(MainMenuManager), nameof(MainMenuManager.Start))]
@@ -205,7 +206,7 @@ namespace TownOfUs {
                 }
 
                 int diff = 0;
-                System.Version ver = System.Version.Parse(tagname.Replace("v", ""));
+                System.Version ver = System.Version.Parse(Regex.Replace(tagname, "^[\u4e00-\u9fa5] | [A-Za-z]$", "").Replace("-", "").Replace("-", ""));
                 if (updateType == "TOU") { //Check TOU version
                     diff = TownOfUs.Version.CompareTo(ver);
                     if (diff < 0) { // TOU update required
@@ -216,7 +217,7 @@ namespace TownOfUs {
                     if (Patches.SubmergedCompatibility.Version == null) hasSubmergedUpdate = true;
                     else
                     {
-                        diff = Patches.SubmergedCompatibility.Version.CompareTo(SemanticVersioning.Version.Parse(tagname.Replace("v", ""))); ;
+                        diff = Patches.SubmergedCompatibility.Version.CompareTo(SemanticVersioning.Version.Parse(Regex.Replace(tagname, "^[\u4e00-\u9fa5] | [A-Za-z]$", "")));
                         if (diff < 0)
                         { // Submerged update required
                             hasSubmergedUpdate = true;
@@ -254,7 +255,7 @@ namespace TownOfUs {
             string downloadDLL= "";
             string info = "";
             if (updateType == "TOU") {
-                downloadDLL = updateTOUURI;
+                downloadDLL = "http://pan.pafyx.top/Github/LastTOU/TownOfUs.dll";
                 info = "Town Of Us\nupdated successfully.\nPlease RESTART the game.";
             } else if (updateType == "Submerged") {
                 downloadDLL = updateSubmergedURI;
