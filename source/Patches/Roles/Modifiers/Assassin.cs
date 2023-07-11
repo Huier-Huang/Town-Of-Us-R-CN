@@ -15,6 +15,8 @@ namespace TownOfUs.Roles.Modifiers
 
 
         private Dictionary<string, Color> ColorMapping = new Dictionary<string, Color>();
+        public Dictionary<RoleEnum, string> ColorMapRoleKey = new Dictionary<RoleEnum, string>();
+        public Dictionary<ModifierEnum, string> ColorMapModifierKey = new Dictionary<ModifierEnum, string>();
 
         public Dictionary<string, Color> SortedColorMapping;
 
@@ -31,7 +33,7 @@ namespace TownOfUs.Roles.Modifiers
             RemainingKills = CustomGameOptions.AssassinKills;
 
             // Adds all the roles that have a non-zero chance of being in the game.
-            if (CustomGameOptions.MayorOn > 0) ColorMapping.Add("市长", Colors.Mayor);
+            if (CustomGameOptions.MayorOn > 0) AddToMap(RoleEnum.Mayor, "市长", Colors.Mayor);
             if (CustomGameOptions.SheriffOn > 0 || (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0 && CustomGameOptions.BecomeOnVampDeaths == BecomeEnum.Sheriff)) ColorMapping.Add("警长", Colors.Sheriff);
             if (CustomGameOptions.EngineerOn > 0) ColorMapping.Add("工程师", Colors.Engineer);
             if (CustomGameOptions.SwapperOn > 0) ColorMapping.Add("换票师", Colors.Swapper);
@@ -107,6 +109,18 @@ namespace TownOfUs.Roles.Modifiers
 
             // Sorts the list alphabetically. 
             SortedColorMapping = ColorMapping.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
+        }
+
+        private void AddToMap(RoleEnum type, string name, Color color)
+        {
+            ColorMapping.Add(name,color);
+            ColorMapRoleKey.Add(type, name);
+        }
+
+        private void AddToMap(ModifierEnum type, string name, Color color)
+        {
+            ColorMapping.Add(name, color);
+            ColorMapModifierKey.Add(type, name);
         }
 
         public bool GuessedThisMeeting { get; set; } = false;
