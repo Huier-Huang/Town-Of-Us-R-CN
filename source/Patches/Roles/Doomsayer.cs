@@ -96,7 +96,7 @@ namespace TownOfUs.Roles
                     if (CustomGameOptions.GlitchOn > 0) ColorMapping.Add("混沌", Colors.Glitch);
                     if (CustomGameOptions.PlaguebearerOn > 0) ColorMapping.Add("瘟疫之源", Colors.Plaguebearer);
                     if (CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) ColorMapping.Add("吸血鬼", Colors.Vampire);
-                    if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("狼人", Colors.Werewolf);
+                    if (CustomGameOptions.WerewolfOn > 0) ColorMapping.Add("月下狼人", Colors.Werewolf);
                     if (CustomGameOptions.HiddenRoles) ColorMapping.Add("剑圣", Colors.Juggernaut);
                 }
             }
