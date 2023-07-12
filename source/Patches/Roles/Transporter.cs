@@ -83,20 +83,15 @@ namespace TownOfUs.Roles
                 TransportList.GetPooledBubble().enabled = false;
                 TransportList.GetPooledBubble().gameObject.SetActive(false);
 
-                TransportList.freeChatField.enabled = false;
-                TransportList.freeChatField.gameObject.SetActive(false);
-
-                TransportList.quickChatField.enabled = false;
-                TransportList.quickChatField.gameObject.SetActive(false);
+                TransportList.freeChatField.textArea.enabled = false;
+                TransportList.freeChatField.textArea.gameObject.SetActive(false);
 
                 TransportList.banButton.enabled = false;
                 TransportList.banButton.gameObject.SetActive(false);
 
-                /* TransportList.CharCount.enabled = false;
-                TransportList.CharCount.gameObject.SetActive(false);
+                TransportList.freeChatField.charCountText.enabled = false;
+                TransportList.freeChatField.charCountText.gameObject.SetActive(false);
 
-                TransportList.OpenKeyboardButton.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                TransportList.OpenKeyboardButton.Destroy(); */
 
                 TransportList.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>()
                     .enabled = false;

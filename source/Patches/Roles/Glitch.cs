@@ -621,20 +621,14 @@ namespace TownOfUs.Roles
                     __gInstance.MimicList.GetPooledBubble().enabled = false;
                     __gInstance.MimicList.GetPooledBubble().gameObject.SetActive(false);
 
-                    __gInstance.MimicList.freeChatField.enabled = false;
-                    __gInstance.MimicList.freeChatField.gameObject.SetActive(false);
-
-                    __gInstance.MimicList.quickChatField.enabled = false;
-                    __gInstance.MimicList.quickChatField.gameObject.SetActive(false);
+                    __gInstance.MimicList.freeChatField.textArea.enabled = false;
+                    __gInstance.MimicList.freeChatField.textArea.gameObject.SetActive(false);
 
                     __gInstance.MimicList.banButton.enabled = false;
                     __gInstance.MimicList.banButton.gameObject.SetActive(false);
 
-                    /* __gInstance.MimicList.CharCount.enabled = false;
-                    __gInstance.MimicList.CharCount.gameObject.SetActive(false); */
-
-/*                     __gInstance.MimicList.OpenKeyboardButton.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                    __gInstance.MimicList.OpenKeyboardButton.Destroy(); */
+                    __gInstance.MimicList.freeChatField.charCountText.enabled = false;
+                    __gInstance.MimicList.freeChatField.charCountText.gameObject.SetActive(false);
 
                     __gInstance.MimicList.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>()
                         .enabled = false;
