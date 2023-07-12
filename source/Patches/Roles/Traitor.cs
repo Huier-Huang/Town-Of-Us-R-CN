@@ -7,7 +7,7 @@ namespace TownOfUs.Roles
         {
             Name = "背叛者";
             ImpostorText = () => "";
-            TaskText = () => "为装好身份不要被发现!";
+            TaskText = () => "伪装好身份不要被发现!";
             Color = Patches.Colors.Impostor;
             RoleType = RoleEnum.Traitor;
             AddToRoleHistory(RoleType);

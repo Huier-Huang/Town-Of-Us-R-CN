@@ -1221,9 +1221,9 @@ namespace TownOfUs.CustomOption
 
             Warlock = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>术士</color>");
             ChargeUpDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "充满要的时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "汲取诅咒之力所需时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             ChargeUseDuration =
-                new CustomNumberOption(num++, MultiMenu.imposter, "使用充满所需的时间", 1f, 0.05f, 5f, 0.05f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.imposter, "发动诅咒所需时间", 1f, 0.05f, 5f, 0.05f, CooldownFormat);
 
             Blackmailer = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>勒索者</color>");
             BlackmailCooldown =

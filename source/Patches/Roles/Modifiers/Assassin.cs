@@ -49,7 +49,7 @@ namespace TownOfUs.Roles.Modifiers
             if (CustomGameOptions.TrapperOn > 0) AddToMap(RoleEnum.Trapper,"陷阱师", Colors.Trapper);
             if (CustomGameOptions.TransporterOn > 0) AddToMap(RoleEnum.Transporter,"传送师", Colors.Transporter);
             if (CustomGameOptions.MediumOn > 0) AddToMap(RoleEnum.Medium,"招魂师", Colors.Medium);
-            if (CustomGameOptions.MysticOn > 0) AddToMap(RoleEnum.Mystic,"招魂", Colors.Mystic);
+            if (CustomGameOptions.MysticOn > 0) AddToMap(RoleEnum.Mystic,"灵媒", Colors.Mystic);
             if (CustomGameOptions.DetectiveOn > 0) AddToMap(RoleEnum.Detective,"侧写师", Colors.Detective);
             if (CustomGameOptions.ImitatorOn > 0) AddToMap(RoleEnum.Imitator,"效颦者", Colors.Imitator);
             if (CustomGameOptions.VampireHunterOn > 0 && CustomGameOptions.GameMode == GameMode.Classic && CustomGameOptions.VampireOn > 0) AddToMap(RoleEnum.VampireHunter,"吸血鬼杀手", Colors.VampireHunter);
