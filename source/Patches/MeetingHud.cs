@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using UnityEngine;
+using TMPro;
 
 namespace TownOfUs;
 
@@ -12,6 +13,8 @@ public class MeetingHudPlayerVoteAreaPlugin
     public static int oldPage;
     public static int maxPage;
     public static int count;
+
+    public static GameObject pageText;
 
     public static List<PlayerVoteArea> Targets => DestroyableSingleton<MeetingHud>.Instance.playerStates.OrderBy(p => p.AmDead).ToList();
 
@@ -29,7 +32,15 @@ public class MeetingHudPlayerVoteAreaPlugin
     }
 
     [HarmonyPatch(nameof(MeetingHud.Start)), HarmonyPostfix]
-    public static void StartPatch(MeetingHud __instance) => UpdateButton(__instance);
+    public static void StartPatch(MeetingHud __instance)
+    {
+        UpdateButton(__instance);
+        var te = GameObject.Find("TitleText_TMP");
+        pageText = GameObject.Instantiate(te, __instance.transform);
+        pageText.transform.position = new Vector3(2.1597f, 3.2031f, -11);
+        Object.Destroy(pageText.GetComponent<TextTranslatorTMP>());
+        pageText.GetComponent<TextMeshPro>().text = $"'<':上一页 '>':下一页 当前页数:{page}";
+    }
 
     [HarmonyPatch(nameof(MeetingHud.Update)), HarmonyPostfix]
     public static void UpdatePatch(MeetingHud __instance)

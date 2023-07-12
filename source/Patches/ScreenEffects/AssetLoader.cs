@@ -56,7 +56,7 @@ namespace TownOfUs.Patches.ScreenEffects
             return name.Split('/').Last().Split('.').First();
         }
 
-        private T? LoadAsset<T>(AssetBundle assetBundle, string name) where T : UnityObject
+        private T LoadAsset<T>(AssetBundle assetBundle, string name) where T : UnityObject
         {
             var asset = assetBundle.LoadAsset(name, Il2CppType.Of<T>())?.Cast<T>().DontUnload();
             loadedObjects.Add(name, asset);
