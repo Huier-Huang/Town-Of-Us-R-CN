@@ -92,6 +92,8 @@ namespace TownOfUs.Roles
                 TransportList.freeChatField.charCountText.enabled = false;
                 TransportList.freeChatField.charCountText.gameObject.SetActive(false);
 
+                TransportList.openKeyboardButton.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                TransportList.openKeyboardButton.Destroy();
 
                 TransportList.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>()
                     .enabled = false;

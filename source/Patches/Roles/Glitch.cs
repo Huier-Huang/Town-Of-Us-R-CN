@@ -630,6 +630,9 @@ namespace TownOfUs.Roles
                     __gInstance.MimicList.freeChatField.charCountText.enabled = false;
                     __gInstance.MimicList.freeChatField.charCountText.gameObject.SetActive(false);
 
+                    __gInstance.MimicList.openKeyboardButton.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                    __gInstance.MimicList.openKeyboardButton.Destroy();
+
                     __gInstance.MimicList.gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>()
                         .enabled = false;
                     __gInstance.MimicList.gameObject.transform.GetChild(0).gameObject.SetActive(false);

@@ -129,10 +129,25 @@ namespace TownOfUs.Roles
             ColorMapAbilityKey.Add(type, name);
         }
 
-        public RoleEnum GetRoleEnum(string name) => ColorMapRoleKey.First(n => n.Value == name).Key;
+        public RoleEnum GetRoleEnum(string name)
+        {
+            var list = ColorMapRoleKey.Where(n => n.Value == name);
+            if(list == null) return RoleEnum.None;
+            return list.FirstOrDefault().Key;
+        }
 
-        public ModifierEnum GetModifierEnum(string name) => ColorMapModifierKey.First(n => n.Value == name).Key;
-        public AbilityEnum GetAbilityEnum(string name) => ColorMapAbilityKey.First(n => n.Value == name).Key;
+        public ModifierEnum GetModifierEnum(string name)
+        {
+            var list = ColorMapModifierKey.Where(n => n.Value == name);
+            if(list == null) return ModifierEnum.Null;
+            return list.FirstOrDefault().Key;
+        }
+        public AbilityEnum GetAbilityEnum(string name)
+        {
+            var list = ColorMapAbilityKey.Where(n => n.Value == name);
+            if(list == null) return AbilityEnum.Null;
+            return list.FirstOrDefault().Key;
+        }
 
         public bool GuessedThisMeeting { get; set; } = false;
 

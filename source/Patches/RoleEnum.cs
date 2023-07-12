@@ -84,11 +84,13 @@ namespace TownOfUs
         Multitasker,
         DoubleShot,
         Underdog,
-        Frosty
+        Frosty,
+        Null
     }
 
     public enum AbilityEnum
     {
-        Assassin
+        Assassin,
+        Null
     }
 }

@@ -28,7 +28,7 @@ namespace TownOfUs
                     cam.orthographicSize = 3f;
             }
 
-            ResolutionManager.ResolutionChanged.Invoke(Screen.width / Screen.height, Screen.width, Screen.height, Screen.fullScreen);
+            /* ResolutionManager.ResolutionChanged.Invoke(Screen.width / Screen.height, Screen.width, Screen.height, Screen.fullScreen); */
         }
     }
 
