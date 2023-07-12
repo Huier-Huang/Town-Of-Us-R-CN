@@ -657,7 +657,7 @@ namespace TownOfUs.CustomOption
 
             GameModeSettings =
                 new CustomHeaderOption(num++, MultiMenu.main, "游戏模式设置");
-            GameMode = new CustomStringOption(num++, MultiMenu.main, "Game Mode", new[] {"经典", "所有", "仅击杀", "合纵" });
+            GameMode = new CustomStringOption(num++, MultiMenu.main, "游戏模式", new[] {"经典", "所有", "仅击杀", "合纵" });
 
             ClassicSettings =
                 new CustomHeaderOption(num++, MultiMenu.main, "经典模式设置");
@@ -747,9 +747,9 @@ namespace TownOfUs.CustomOption
             LargeMapIncreasedCooldown =
                 new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged增加冷却时间", 0f, 0f, 15f, 2.5f, CooldownFormat);
             SmallMapIncreasedShortTasks =
-                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira HQ增加短任务", 0, 0, 5, 1);
+                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira总部增加短任务", 0, 0, 5, 1);
             SmallMapIncreasedLongTasks =
-                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira HQ增加长任务", 0, 0, 3, 1);
+                 new CustomNumberOption(num++, MultiMenu.main, "Skeld/Mira总部增加长任务", 0, 0, 3, 1);
             LargeMapDecreasedShortTasks =
                  new CustomNumberOption(num++, MultiMenu.main, "Airship/Submerged减少短任务", 0, 0, 5, 1);
             LargeMapDecreasedLongTasks =
@@ -765,7 +765,7 @@ namespace TownOfUs.CustomOption
 
             CustomGameSettings =
                 new CustomHeaderOption(num++, MultiMenu.main, "自定义游戏设置");
-            ColourblindComms = new CustomToggleOption(num++, MultiMenu.main, "伪装的审稿", false);
+            ColourblindComms = new CustomToggleOption(num++, MultiMenu.main, "通讯破坏隐藏颜色", false);
             ImpostorSeeRoles = new CustomToggleOption(num++, MultiMenu.main, "内鬼可见队友身份", false);
             DeadSeeRoles =
                 new CustomToggleOption(num++, MultiMenu.main, "幽灵可见角色和投票", false);
@@ -802,15 +802,15 @@ namespace TownOfUs.CustomOption
             Aurial =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#B34D99FF>修仙者</color>");
             RadiateRange =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "放射范围", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "感知范围", 1f, 0.25f, 5f, 0.25f, MultiplierFormat);
             RadiateCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "放射冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "感知冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             RadiateInvis =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "放射延迟", 10f, 0f, 15f, 1f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "感知所需时间", 10f, 0f, 15f, 1f, CooldownFormat);
             RadiateCount =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "放射的用途", 3, 1, 5, 1);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "感知次数", 3, 1, 5, 1);
             RadiateSucceedChance =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "放射成功概率", 100f, 0f, 100f, 10f, PercentFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "感知成功概率", 100f, 0f, 100f, 10f, PercentFormat);
 
             Detective =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#4D4DFFFF>侧写师</color>");
@@ -850,7 +850,7 @@ namespace TownOfUs.CustomOption
             Oracle =
                 new CustomHeaderOption(num++, MultiMenu.crewmate, "<color=#BF00BFFF>神之使徒</color>");
             ConfessCooldown =
-                new CustomNumberOption(num++, MultiMenu.crewmate, "承认冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
+                new CustomNumberOption(num++, MultiMenu.crewmate, "祷告冷却时间", 25f, 10f, 60f, 2.5f, CooldownFormat);
             RevealAccuracy = new CustomNumberOption(num++, MultiMenu.crewmate, "承认的准确性", 80f, 0f, 100f, 10f,
                 PercentFormat);
             NeutralBenignShowsEvil =
@@ -1229,7 +1229,7 @@ namespace TownOfUs.CustomOption
             BlackmailCooldown =
                 new CustomNumberOption(num++, MultiMenu.imposter, "勒索冷却", 10f, 1f, 15f, 1f, CooldownFormat);
 
-            Miner = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>管道工</color>");
+            Miner = new CustomHeaderOption(num++, MultiMenu.imposter, "<color=#FF0000FF>矿工</color>");
             MineCooldown =
                 new CustomNumberOption(num++, MultiMenu.imposter, "挖洞冷却", 25f, 10f, 60f, 2.5f, CooldownFormat);
 
